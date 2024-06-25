@@ -1,0 +1,1269 @@
+[
+    {
+        "img_path": "test/14.jpg",
+        "caption1": "U.S. President Donald Trump tweeted that, \"Anyone who ordered a ticket to my rally and didn't attend should be arrested and face very powerful charges.\"",
+        "caption2": "The image claiming ordering a ticket to Trump's rally and arrest on not attending was a fabrication, intended as a spoof poking fun at the president over the disappointing rally attendance.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/16.jpg",
+        "caption1": "On the same day in South Africa, a bird walks along Durban's empty shore where a ban on gatherings kept revellers at bay.",
+        "caption2": "General view of an empty beach with high-rise buildings in the distance.",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/21.jpg",
+        "caption1": "A tribute to Captain Sir Tom Moore lights up Piccadilly Circus, London. The 100-year-old, who raised almost PS33m for NHS charities by walking laps of his garden, died with coronavirus.",
+        "caption2": "A woman plays the violin in Piccadilly Circus during a tribute to Captain Sir Tom Moore on 2 February 2021",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/28.jpg",
+        "caption1": "On Tuesday police patrol the school where more than 300 children were kidnapped in Katsina state, northern Nigeria...",
+        "caption2": "Police patrol inside the Government Science school in Kankara, in northwestern Katsina state, Nigeria after gunmen abducted students on December 15, 2020.",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/30.jpg",
+        "caption1": "Maine lobsterman catches extremely rare purple lobster",
+        "caption2": "These are not genuine photographs of a purple lobster.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/38.png",
+        "caption1": "Setting your Apple device's date to 1 January 1970 will reveal a retro-themed Easter egg.",
+        "caption2": "Never put January 1, 1970 as the date on your iPhone, unless you want to block it",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/48.jpg",
+        "caption1": "The Cow and the Tailor Shop, Rajasthan, by Elizabeth Brooks, from the US",
+        "caption2": "A sacred cow in a street in India",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/49.jpg",
+        "caption1": "The FBI raided the CDC in the middle of the night to seize data on a link between vaccines and autism.",
+        "caption2": "A known hoax purveyor spread false claims that the FBI \"raided\" the CDC in the middle of the night for data on vaccines and autism on the order of President Trump.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/53.png",
+        "caption1": "A photograph shows a genuine fossil of a megalodon tooth embedded in a whale bone.",
+        "caption2": "While this image likely shows a genuine megalodon tooth as well as a genuine whale bone, these two artifacts were not discovered at the same time, in the same location, or in this particular arrangement.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/64.jpg",
+        "caption1": "Indian paramilitary troops in Srinagar in Kashmir this month. Sixty eight percent of the army's equipment is so old that it is officially considered \"vintage.\"",
+        "caption2": "Kashmir braces for worst as shelling, gunbattles escalate",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/68.jpg",
+        "caption1": "President Obama passed a law requiring Grandparents to Get All Their Grandchildren Every Weekend.",
+        "caption2": "Reports that President Obama had passed a law requiring grandparents to pick up their grandchildren every weekend came from a site that generates user-created hoax news.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/70.jpg",
+        "caption1": "Actor Jaden Smith committed suicide in July 2016.",
+        "caption2": "A hoax article reported that the actor (and teenaged son of Jada Pinkett Smith and Will Smith) had killed himself.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/71.png",
+        "caption1": "In Indonesia, in the town of Toraja, a woman leaves her grave after being dead for 3 years.",
+        "caption2": "The photograph does not show an actual zombie.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/76.jpg",
+        "caption1": "A picture  showing Goldie Hawn and Kurt Russell both wearing Donald Trump t-shirts ",
+        "caption2": "An image of actors Goldie Hawn and Kurt Russell wearing Donald Trump campaign shirts is a digital fabrication.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/81.png",
+        "caption1": "Putin\u2019s daughter had died after taking her second dose of the COVID-19 vaccine:",
+        "caption2": "A video supposedly showing Putin\u2019s daughter taking the vaccine actually showed a volunteer unrelated to the Russian president",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/94.png",
+        "caption1": "Since people were not taking the police seriously the Kenyan government started using the Maasai tribe for the curfew",
+        "caption2": "While the person in this video is not a member of the Maasai tribe who was employed by the Kenyan government to whip people who disobeyed self-quarantining orders, the video was taken in Kenya during the COVID-19 pandemic and shows a person who is encouraging (in their own weird way) social distancing.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/100.png",
+        "caption1": "A white woman named Ricky Ellsworth was killed by a black police officer in Minneapolis, Minnesota",
+        "caption2": "The woman in this photograph is not \u201cRicky Ellsworth.\u201d",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/101.jpg",
+        "caption1": "In December, the police kept watch over a protest of Prime Minister Viktor Orban's labor policies.",
+        "caption2": "A drawing depicting Hungarian President Viktor Orban is projected on the wall of the TV building during a protest.",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/102.jpg",
+        "caption1": "After telling officers he was 'about to die', Floyd eventually lost consciousness and would never regain it",
+        "caption2": "A man kneels in front of a memorial and mural that honors in Houston\u2019s Third Ward, where Floyd grew.",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/104.png",
+        "caption1": "President Joe Biden signed an executive order in 2021 allowing the U.S. to fund abortions abroad.",
+        "caption2": "None of the moves by Biden, however, authorize the United States government to fund abortions abroad.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/108.jpg",
+        "caption1": "An image showing a cruise ship dumping human waste into the ocean near a coastal city",
+        "caption2": "This is a genuine photograph showing two dark, brownish clouds in the waters surrounding a cruise ship, but it doesn\u2019t document that ship\u2019s dumping human waste into the ocean",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/116.jpg",
+        "caption1": "Before his death, physicist Stephen Hawking declared his Christian faith after a visit with Pope Francis.",
+        "caption2": "On 14 March 2018, the \u201cCatholics Online\u201d Facebook page posted a photograph of Hawking meeting Pope Francis alongside a fabricated claim about believing in god",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/123.jpg",
+        "caption1": "Mexican drug kingpin Joaquin \"El Chapo\" Guzman donated millions of dollars to Clinton Foundation.",
+        "caption2": "Mexican drug lord 'El Chapo' makes brazen prison escape",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/125.jpg",
+        "caption1": "Pastor and Gospel Singer Don Moen Dead After a Short Illness",
+        "caption2": "Don Moen Canada Tour 2015 at the Prayer Palace, Toronto",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/130.png",
+        "caption1": "A photograph shows salt spilled from a fallen shaker that created the image of Jesus on a table.",
+        "caption2": "The photograph of Jesus made with salt seen here is real, however \u2014 but its explanation is an artistic",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/138.jpg",
+        "caption1": "Experiencing \u201cSatan\u2019s raw power\u201d is something everybody should experience at least once in their lifetime, according to Katy Perry, who advised fans to \u201cadd praying to Satan to your bucket list.\u201c",
+        "caption2": "There is no evidence that the singer Katy Perry said made comments about people pray to Satan",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/143.jpg",
+        "caption1": "Despite many kingpins like Joaquin 'El Chapo' Guzman being put in jail, many say Mexico's war on drugs has been futile",
+        "caption2": "Joaquin \"El Chapo\" Guzman is escorted to a helicopter in handcuffs by Mexican navy marines at a navy hanger in Mexico City on Feb. 22, 2014.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/147.jpg",
+        "caption1": "Visitors approach the Meroe Pyramids in northern Sudan on Friday.",
+        "caption2": "A woman walks with children towards the Meroe Pyramids. Nearby a man rides a camel.",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/152.jpg",
+        "caption1": "An aerial view of an empty Bournemouth beach",
+        "caption2": "Easter weekend was quiet, with the government urging people to stay at home. This is Bournemouth beach on Good Friday.",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/171.png",
+        "caption1": "In December 2015, a photograph of Republican presidential candidate Ted Cruz along with a quote uttered by him about his relationship with God started circulating around the internet",
+        "caption2": "No record of the Republican candidate  Ted Cruz saying that he \u201cliterally\u201d speaks to God was found.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/175.png",
+        "caption1": "A photograph taken at the 'Million MAGA March' in November 2020 shows Nazi and Confederate flags on display.",
+        "caption2": "The photograph seen above was taken in a different time and place that had no connection to \u201cMillion MAGA March.\u201d",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/189.jpg",
+        "caption1": "The F.B.I. investigated whether the firing of Mr. Comey was a national security threat.",
+        "caption2": "James Comey was fired in May 2017 - just months after Donald Trump took office.",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/200.jpg",
+        "caption1": "Actors Goldie Hawn and Kurt Russell were spotted wearing Donald Trump campaign shirts.",
+        "caption2": "A picture purportedly showing Goldie Hawn and Kurt Russell both wearing Donald Trump t-shirts is spreading across social media.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/210.png",
+        "caption1": "In December 2020, a video supposedly showing a living triceratops in Indonesia being taken down from a truck a bed was widely circulated online",
+        "caption2": "This video actually features a triceratops puppet at a dinosaur theme park in Indonesia called Mojosemi Forest Park.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/215.jpg",
+        "caption1": "People walk through the snow in Victoria Park in Glasgow.",
+        "caption2": "No finger in front of the eye was seen in Glasgow on Tuesday.",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/216.jpg",
+        "caption1": "In December, the police kept watch over a protest of Prime Minister Viktor Orban's labor policies.",
+        "caption2": "A drawing depicting Hungarian Prime Minister Viktor Orban is projected on the wall of a TV building during a protest on Monday.",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/218.jpg",
+        "caption1": "A picture purportedly showing Goldie Hawn and Kurt Russell both wearing Donald Trump t-shirts is spreading across social media.",
+        "caption2": "Kurt Russell and Goldie Hawn endorse Trump. Love Kurt's shirt! I've always loved both of them!",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/219.jpg",
+        "caption1": "A San Francisco mural portrait of Greta Thunberg used 700 gallons of spray paint.",
+        "caption2": "The San Francisco mural of Greta Thunberg used a little over 12 gallons of aerosol spray paint",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/235.jpg",
+        "caption1": "China Seeking Approval to Kill 20,000 Coronavirus Patients ",
+        "caption2": "HONG KONG, CHINA - JANUARY 22: A patient is transferred by an ambulance to the Infectious Disease Centre of Princess Margaret Hospital on January 22, 2020 in Hong Kong, China. Hong Kong reported its first two cases of Wuhan coronavirus infections as the number of those who have died from the virus in China climbed to seventeen on Wednesday and cases have been reported in other countries including the United States,Thailand, Japan, Taiwan and South Korea.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/236.png",
+        "caption1": "After Hurricane Laura in August 2020, a photograph supposedly showing two sharks that got stuck in power lines several feet above the ground widely circulated on social media",
+        "caption2": "This was a genuine picture of several sharks (and other marine animals) stuck in a collection of power lines. However, Hurricane Laura (or any other weather event) was not the culprit for this bizarre scene.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/254.jpg",
+        "caption1": "According to congressional sources Representative Adam Schiff used tax payer money to reach a sexual harassment settlement with a 19 year old male in 2013.",
+        "caption2": "In early February 2019, social media trolls attempted to spread a claim that \u201ccongressional sources\u201d had confirmed Rep. Adam Schiff (D-California) \u201cused taxpayer money\u201d to cover up a sexual-harassment accusation",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/256.jpg",
+        "caption1": "A photograph shows a packed arena for President Trump's June 2020 rally in Tulsa, Oklahoma.",
+        "caption2": "The upper section of the BOK Center in Tulsa, Oklahoma, is partially empty as President Donald Trump speaks at his campaign rally on June 20.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/266.jpg",
+        "caption1": "George Zimmerman \u2014 who was acquitted of shooting and killing 17-year-old Trayvon Martin in 2012 \u2014 put the gun he used to kill the teenager up for sale on a gun auction web site site was purchased by musician  Kendrick Lamar",
+        "caption2": "The story of Kendrick Lamar bought a gun is a piece of fiction from a \u201csatire\u201d web site",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/276.jpg",
+        "caption1": "Nicaraguan President Daniel Ortega and his wife, Vice President Rosario Murillo, in November.",
+        "caption2": "The Nicaraguan president is one of the guests at the 26th Ibero-American Summit of Heads of State.",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/287.jpg",
+        "caption1": "President Trump respectfully touches the face of a U.S veteran who lost both arms, knowing he could no longer enjoy the feel of a handshake.",
+        "caption2": "This is a genuine photograph of Trump briefly touching the cheek of a supporter with two prosthetic arms. However, the accompanying backstory about the supporter being a veteran is inaccurate.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/296.jpg",
+        "caption1": "President Trump signed an executive order naming himself winner of the popular vote.",
+        "caption2": "The post about Trump signeing an executive order and naming himself winner of the popular vote purely satire",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/302.jpg",
+        "caption1": "Alison Escobar's artistically taken shot of her three-year-old daughter reflected in glass while drawing with chalk.",
+        "caption2": "Girl reflected in glass",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/312.jpg",
+        "caption1": "Office worker Hideyuki Togashi, 48, shows his tattoos as he poses for a photograph at a park near his house in Tokyo, Japan, September 7, 2020",
+        "caption2": "A man stands on grass wearing shorts, showing a prosthetic leg and a tattooed leg",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/319.png",
+        "caption1": "President Obama issued an order for abortions to be celebrated on Mother's Day.",
+        "caption2": "President Obama had ordered abortions were to be celebrated on Mother\u2019s Day as part of a new \u2018National Abortion Freedom Day\u2019 was posted on Facebook via \u201cFox News The FB Page\u201d and is false",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/341.jpg",
+        "caption1": "Press assembly lines inside the Dasung factory.",
+        "caption2": "Moon Seung at his auto parts factory in Incheon, South Korea.",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/347.jpg",
+        "caption1": "Linkin Park singer Chester Bennington, who passed away on 20 July 2017 in his Palos Verdes Estates home near Los Angeles, had been murdered in similar fashion to his friend, Soundgarden singer Chris Cornell, who died two months earlier.",
+        "caption2": "BANGKOK, THAILAND-SEPTEMBER 23: Chester Bennington of Linkin Park performs on Linkin Park Live in Bangkok A Thousand Suns World Tour 2011 at Impact Maungthong Thani, September 23, 2011 in Bangkok, Thailand",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/360.jpg",
+        "caption1": "Meanwhile, teams battle it out at the annual canoe race held in Bangui, the capital of the Central African Republic, on Tuesday.",
+        "caption2": "Men paddle in a huge canoe.",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/362.jpg",
+        "caption1": "Did Donald trump really say he would not rule out using nuclear weapons against Isis or Mexico if they refuse to build the wall?",
+        "caption2": "No, Donald Trump didn't suggest dropping nuclear bombs on Mexico if they refused to build the wall.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/363.jpg",
+        "caption1": "Joe and Joshua appreciate a neighbour's rainbow in support of our NHS.",
+        "caption2": "rainbow children",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/370.jpg",
+        "caption1": "On Monday Bernie Sanders held a press gathering with radical anti-Semite Rep. Rashida Tlaib to promote their vision for America.",
+        "caption2": "Sanders and Tlaib were at a food pantry, not a grocery store, and they were talking about basic services like water and power being cut off to low-income residents, not \u201cpushing socialism.\u201d",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/372.jpg",
+        "caption1": "Former Alaska governor (and John McCain\u2019s running mate in the 2008 Presidential race) Sarah Palin took to Facebook to demand a ban on \u201cArabic numerals\u201d in U.S. schools",
+        "caption2": "A story that the former Alaska governor wants \"Arabic numbers\" out of schools originated from a fake news web site.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/376.jpg",
+        "caption1": "Ann Antonopoulou: \"Our Parson Russell Terrier Snoopy's new cave bed just arrived and he's loving it, especially in this very cold weather of early February in Edinburgh. He refuses to come out.\"",
+        "caption2": "Dog under a cover",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/377.jpg",
+        "caption1": "Hillary Clinton Said Children Should Be Raised by the State",
+        "caption2": "A fabricated quote from Hillary Clinton saying children should be raised and trained by the state originated with one of many sites dedicated to spreading misinformation about presidential candidates.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/385.jpg",
+        "caption1": "John Myhre Frederiksen used a fisheye lens to take this photo in Copenhagen.",
+        "caption2": "Autumn trees",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/390.jpg",
+        "caption1": "A photograph shows a 6-year-old child working as a coal miner.",
+        "caption2": "The original photograph looks to be merely a posed picture of a young boy dressed up with some props",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/394.png",
+        "caption1": "In March 2020, a video circulated on social media supposedly showing a 5G tower being torn down in China because people feared it was causing the COVID-19 coronavirus disease pandemic.",
+        "caption2": "The video shows protesters in Hong Kong in August 2019 (before the COVID-19 pandemic) tearing down a surveillance tower.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/396.jpg",
+        "caption1": "On Monday Bernie Sanders held a press gathering with radical anti-Semite Rep. Rashida Tlaib to promote their vision for America.",
+        "caption2": "Sanders and Tlaib were at a food pantry, not a grocery store, and they were talking about basic services like water and power being cut off to low-income residents, not \u201cpushing socialism.\u201d",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/400.png",
+        "caption1": "A white woman named Ricky Ellsworth was killed by a black police officer in Minneapolis, Minnesota",
+        "caption2": "A viral meme got key facts wrong while attempting to make a point about police violence and racial injustice in the U.S.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/402.jpg",
+        "caption1": "KGB agent admitted the band the Sex Pistols were an operation backed by the former Soviet Union to destabilize Western democracy",
+        "caption2": "The Engine Rooms Southampton - October 4th 2015: Former Sex Pistol John Lydon with Public Image Ltd (PiL) performing at the Engine Rooms, Southampton, October 4, 2015 in Southampton, Hampshire, UK",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/404.jpg",
+        "caption1": "Trampoline Bridge across the Seine, Paris",
+        "caption2": "Photographs purportedly showing a \u201ctrampoline bridge\u201d in Paris is a concept design created for an architecture competition",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/405.png",
+        "caption1": "Eminem biopic '8 Mile' will return with a sequel in late 2016.",
+        "caption2": "A fake news site caused a stir by claiming that '8 Mile 2' would be released in December 2016.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/407.jpg",
+        "caption1": "A photograph shows President Obama, Dr. Anthony Fauci, and Melinda Gates at a laboratory in Wuhan, China, in 2015.",
+        "caption2": "President Barack Obama and Dr. Fauci visiting NIH lab to learn about the results of the experimental Ebola vaccine",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/411.jpg",
+        "caption1": "Televangelist Joel Osteen endorsed Donald Trump.",
+        "caption2": "While Joel Osteen complimented Donald Trump during a radio interview, he did not endorse him for president.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/412.png",
+        "caption1": "A viral photograph shows Donald Trump with E. Jean Carroll, who's accused him of past sexual assault, proving he was lying when he said he didn't know her.",
+        "caption2": "This is a picture of Harth, not Carroll, although some users shared it with the erroneous belief that it undermined Trump\u2019s claim that he didn\u2019t know Carroll.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/415.jpg",
+        "caption1": "A photograph shows a soldier carrying a donkey on his back during World War II to prevent the animal from inadvertently setting off landmines.",
+        "caption2": "The picture actually dates from 1958, during the Algerian War (i.e., a war for independence waged against French forces in Colonial Algeria). And it depicts a starving donkey that was rescued by a member of the French Foreign Legion who carried it back to his base",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/416.jpg",
+        "caption1": "A photograph shows buses purchased by Black Lives Matter to \"transport members to riots.\"",
+        "caption2": "Toronto Raptors arrive at Disney Campus in Black Lives Matter Buses.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/419.jpg",
+        "caption1": "Projecting water 105m (344.5ft) into the air, the new fountain located at The Pointe on Palm Jumeirah in Dubai recently broke records as the largest of its kind in the world. The waterfront attraction features more than 3000 multi-coloured lights.",
+        "caption2": "The Palm Fountain, Palm Jumeirah, Dubai",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/420.png",
+        "caption1": "An image featuring a picture of actress Jodie Foster alongside a quote by her about wealth disparity in the United States",
+        "caption2": "This quote about wealth disparity in the United States did not originate with Jodie Foster",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/424.jpg",
+        "caption1": "Terry the Turtle flipping the bird, by Mark Fitzpatrick, Lady Elliot Island, Queensland, Australia",
+        "caption2": "A turtle appearing to be gesticulating at the camera",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/426.jpg",
+        "caption1": "An episode of \"The Simpsons\" predicted that U.S. President Donald Trump would cancel his trip to Denmark after the prime minister refused to sell Greenland to the United States.",
+        "caption2": "Trump was mentioned in Simpsons seasons, but never as president or a potential buyer of Greenland",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/433.png",
+        "caption1": "A video shows Anderson Cooper laughing uncontrollably after Kellyanne Conway used the phrase \"alternative facts.\"",
+        "caption2": "This video was compiled using footage showing Cooper getting the giggles during a 2011 episode of AC360, as the host was reporting on a story about French actor Gerard Depardieu\u2019s urinating on a plane",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/435.jpg",
+        "caption1": "On Monday Bernie Sanders held a press gathering with radical anti-Semite Rep. Rashida Tlaib to promote their vision for America.",
+        "caption2": "Sanders and Tlaib were at a food pantry, not a grocery store, and they were talking about basic services like water and power being cut off to low-income residents, not \u201cpushing socialism.\u201d",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/445.jpg",
+        "caption1": "President Trump's second wife, Marla Maples, died in a plane crash in April 2017.",
+        "caption2": "There is no truth to the sensational headline that Trump\u2019s Ex-Wife Marla Maples Died After Airline Accident",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/451.jpg",
+        "caption1": "An Army soldier checks his sword during the rehearsal for the Republic Day parade, in New Delhi, India January 18, 2021.",
+        "caption2": "Soldier in the Indian Army",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/459.jpg",
+        "caption1": "On Tuesday, a man rides his bike in Senegal's southern Casamance region.",
+        "caption2": "A man riding his bike in Ziguinchor looks into the camera.",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/467.jpg",
+        "caption1": "Morris Leonard came across this space invader in Leven.",
+        "caption2": "Gull in a car park in Leven",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/468.jpg",
+        "caption1": "A man chases a swarm of desert locusts in Samburu County, Kenya, on 21 May 2020",
+        "caption2": "Locusts have been congregating in dozens of East African and West Asian countries in 2020, in the worst swarms in decades",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/479.png",
+        "caption1": "U.S. President Joe Biden \"dismissed\" or \"excused\" China's atrocities against its Uyghur population as the result of \"different norms.\"",
+        "caption2": "Biden\u2019s Secretary of State Antony Blinken has voiced his agreement with the assessment that China\u2019s actions against its Uyghur population amounts to genocide.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/480.jpg",
+        "caption1": "Ulta Beauty will close its doors following a buyout by competitor Sephora.",
+        "caption2": "As of May 2017, multiple sources report that Ulta is actually opening new stores, not closing them.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/486.png",
+        "caption1": "Fox & Friends co-host Brian Kilmeade blamed Prince Harry and the former Meghan Markle for Prince Philip's death.",
+        "caption2": "Brian Kilmeade only insinuate and did not outright blame Harry and Meghan\u2019s interview with Winfrey for the death of Philip",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/492.png",
+        "caption1": "Indonesian villagers performed a rite that brought a dead woman back to life after three years in the grave.",
+        "caption2": "The photograph does not show an actual zombie.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/497.jpg",
+        "caption1": "May 2016: Donald Trump suggested he'd use nuclear weapons against Mexico if they refused to build and pay for a wall.",
+        "caption2": "No, Donald Trump didn't suggest dropping nuclear bombs on Mexico if they refused to build the wall.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/498.jpg",
+        "caption1": "A child in red boots standing in a puddle",
+        "caption2": "This photograph was taken by Louise Smart during a walk with her sons in Maldon, Essex",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/503.jpg",
+        "caption1": "A man watering a tree in an attempt to hang himself from it represented the current era of multiculturalism in Europe",
+        "caption2": "The artwork shown was created by Friedrich Kunath in 2010 for a solo exhibition at the Andrea Rosen Gallery in New York",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/504.jpg",
+        "caption1": "There were performances galore at the stadium...",
+        "caption2": "Members of Independence troop performs at the Eagles Square in Abuja, Nigeria during the countrys 60th Independence Celebration on October 1, 2020",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/505.png",
+        "caption1": "U.S. President Joe Biden said: \"Hell, I like all people. White, LGBTQ, even some colored folk.\" He also said: \"Negroes should not be allowed to hold positions of power in government.\"",
+        "caption2": "Biden never said the words \u201cnegroes should not be allowed to hold positions of power in government.\u201d",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/514.jpg",
+        "caption1": "A bird in the hand: Hayley Grant had this robin eating mealworms from her hand in her back garden in Wick, Caithness",
+        "caption2": "Robin",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/516.png",
+        "caption1": "A photograph of current and former U.S. presidents shows President Obama giving former President George W. Bush \"bunny ears.\"",
+        "caption2": "Someone performed a little digital manipulation to that photograph to make it appear as if President Obama had given former President George W. Bush \u201cbunny ears\u201d when the picture was snapped:",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/531.jpg",
+        "caption1": "The Ministry of Commerce in Beijing.",
+        "caption2": "U.S. and Chinese envoys extended trade talks into a third day Wednesday after President Trump said negotiations aimed at ending a tariff war were \"going very well!\"",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/533.png",
+        "caption1": "Pastor Rick Scarborough asserted that breast cancer is caused by women's \"dirty\" thoughts.",
+        "caption2": "The portions attributing the statements about breast cancer to Pastor Scarborough were not highlighted as truthful information",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/534.png",
+        "caption1": "Images shared widely in September 2019 showed people easily climbing the same fence, or same type of fence, that U.S. President Donald Trump said \"can't be climbed.\"",
+        "caption2": "The video footage that showed two young men quickly scaling a fence, with backpacks that may have contained drugs, was captured in March 2016, at a section of border fencing near Nogales, Arizona",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/535.jpg",
+        "caption1": "Yet another quiet evening falls over Singapore's Kallang Basin outside the window",
+        "caption2": "Cat at a window",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/536.jpg",
+        "caption1": "The Annabelle doll that The Conjuring and Annabelle franchises used.",
+        "caption2": "Did the Possessed Annabelle Doll Actually Escape the Warren Museum?",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/542.jpg",
+        "caption1": "Gloucester and Scotland international rugby player Alex Craig works out at his parents' farm in Castle Douglas, Scotland",
+        "caption2": "An athlete uses a piece of farm machinery to do pull-ups on",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/545.jpg",
+        "caption1": "Undated handout issued by Kensington Palace entitled Thank You by Wendy Huson, part of the Hold Still digital exhibition launched by the Duchess of Cambridge in collaboration with the National Portrait Gallery.",
+        "caption2": "Everyday Hero - Richard by Arnhel de Serra, part of the Hold Still digital exhibition",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/552.png",
+        "caption1": "Social media users began circulating a decades-old photograph purporting to show Maxwell with a young Boris Johnson, now the United Kingdom\u2019s prime minister:",
+        "caption2": "The woman seen with Johnson in this picture is Allegra Mostyn-Owen, daughter of the art historian William Mostyn-Owen and Italian writer Gaia Servadio, whom Johnson married in 1987.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/554.jpg",
+        "caption1": "A photograph shows a group of buses that were used to ship in paid anti-Trump protesters to Austin, Texas.",
+        "caption2": "The buses seen here were lined up outside of the Austin Convention Center, where the Tableau Conference, which had about 11,000 attendees, was taking place",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/555.jpg",
+        "caption1": "it's a runway with a difference, beneath the baobab trees near Senegal's capital.",
+        "caption2": "A fashion model walks down the runway during Dakar Fashion Week in Dakar on December 12, 2020",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/557.jpg",
+        "caption1": "National Wallace Monument framed through the arch of the former St Mary's Church",
+        "caption2": "Then the sun came out and lit up the Wallace Monument beautifully",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/565.png",
+        "caption1": "President Obama has overruled Donald Trump's victory in the 2016 presidential election and ordered a revote.",
+        "caption2": "Reports that President Obama has overruled Donald Trump's presidential victory and ordered a revote for December 15 are fake news.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/569.jpg",
+        "caption1": "Angry opposition supporters take to the streets of Niamey on Thursday, after ruling party candidate Mohamed Bazoum wins the presidential election.",
+        "caption2": "A masked man readies a slingshot on a street with protesters and tear gas behind him.",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/571.jpg",
+        "caption1": "Republican presidential candidate Donald Trump leaked classified information about a U.S. military base in Saudi Arabia after receiving his first national security intelligence briefing.",
+        "caption2": "There is no evidence that Donald Trump received a national security intelligence briefing before his 29 July 2016 speech in Colorado Springs, nor did he say anything he hasn\u2019t said before about U.S. military bases in Saudi Arabia.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/580.jpg",
+        "caption1": "A \"motivational poster\" shows a former cheerleader turned Air Force sniper.",
+        "caption2": "MOODY AIR FORCE BASE, Ga. -- Senior Airman Polly-Jan Bobseine, 823rd Security Forces Squadron fire team member, takes aim behind a M-24 Sniper Rifle to hone her close precision engagement skills during proficiency weapons training at a deployed location. Airman Bobseine was chosen out of more than 270,000 enlisted Airmen as one of the Air Force\u2019s 12 Outstanding Airmen of the Year.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/581.jpg",
+        "caption1": "Edward Snowden (the NSA whistleblower) has made another astonishing revelation. He apparently has documents that prove Osama Bin Laden is on the CIA payroll and currently living a luxury lifestyle in the Bahamas.",
+        "caption2": "Edward Snowden did not claim Osama bin Laden was alive and living lavishly in the Bahamas on the CIA payroll.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/584.jpg",
+        "caption1": "Photographs show icebergs with multi-colored striping taken in Lake Michigan.",
+        "caption2": "These striking pictures of icebergs with multi-colored stripes or banding were taken by a Norwegian sailor named Oyvind Tangen while he was aboard a research ship about 1,700 miles south of Cape Town, South Africa",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/586.png",
+        "caption1": "A bear chasing a bicyclist down a mountain road",
+        "caption2": "This is not a genuine photograph of a bear chasing a cyclist",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/589.jpg",
+        "caption1": "A KGB agent admitted that the Sex Pistols were financed by the USSR to destabilize Western democracy.",
+        "caption2": "The Engine Rooms Southampton - October 4th 2015: Former Sex Pistol John Lydon with Public Image Ltd (PiL) performing at the Engine Rooms, Southampton, October 4, 2015 in Southampton, Hampshire, UK",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/598.jpg",
+        "caption1": "Ruins of the city of Vukovar, Croatia, in March 1992",
+        "caption2": "A ruined landscape of houses and trees",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/599.jpg",
+        "caption1": "A butterfly interrupts play at the Australian Open",
+        "caption2": "A butterfly on Naomi Osaka",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/604.jpg",
+        "caption1": "Children look at a magazine during a break from selling fruit in Senegal's capital, Dakar, on Sunday.",
+        "caption2": "Girls stand on the rocks looking at a magazine.",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/606.jpg",
+        "caption1": "President Trump's second wife, Marla Maples, died in a plane crash in April 2017.",
+        "caption2": "There is no truth to the sensational headline that Trump' Ex-Wife Marla Maples Died After Airline Accident",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/612.jpg",
+        "caption1": "Paula White Selling Prayer Flags Blessed by Donald Trump.",
+        "caption2": "A hoax article reported that televangelist Paula White was selling American flags that had been personally blessed by the United States President.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/618.jpg",
+        "caption1": "U.S. Sen. Bernie Sanders and U.S. Rep. Rashida Tlaib \"pushed socialism\" while standing in front of empty grocery-store shelves.",
+        "caption2": "Sanders and Tlaib were at a food pantry, not a grocery store, and they were talking about basic services like water and power being cut off to low-income residents, not \u201cpushing socialism.\u201d",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/630.jpg",
+        "caption1": "A video shows a naked child using bedsheets to escape from an upper story of Buckingham Palace.",
+        "caption2": "Man clambering out of Buckingham Palace window naked is sadly a hoax",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/645.jpg",
+        "caption1": "Troy takes pictures for the Wicked social media accounts, which often involves photographing famous faces like Warwick Davis when they visit the show",
+        "caption2": "Warwick Davis and the cast of Wicked",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/646.jpg",
+        "caption1": "A photograph shows a purple lobster caught in Maine.",
+        "caption2": "These are not genuine photographs of a purple lobster.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/658.jpg",
+        "caption1": "fighter jet in the background",
+        "caption2": "A pilot walks across HMS Queen Elizabeth's flight deck",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/660.jpg",
+        "caption1": "Pupils from Marden Bridge Middle School in Whitley Bay, Tyne and Wear, greet each other on their first day of term as schools in England reopen",
+        "caption2": "Two grils wearing masks embrace each other",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/661.jpg",
+        "caption1": "The coffin of the Ebola victim is carried away.",
+        "caption2": "The Red Cross burial workers carry a box containing the body of an 11-month-old girl",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/679.jpg",
+        "caption1": "Drum cover model Erlin Ibreck at Trafalgar Square, London, 1966",
+        "caption2": "Woman outdoors holding a bird",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/696.jpg",
+        "caption1": "Police spray a water cannon at protesters during a demonstration in Paris",
+        "caption2": "Thousands protest against French bill to curb identification of police",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/707.png",
+        "caption1": "Pfizer CEO Albert Bourla refused to take the Pfizer-BioNTech COVID-19 vaccine.",
+        "caption2": "Pfizer CEO Albert Bourla said that the sooner he can, he will get vaccinated",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/710.jpg",
+        "caption1": "The sculpture stopped the train from plummeting 10m (32ft) into water below, and the driver walked away uninjured.",
+        "caption2": "A metro train rests precariously on an art installation of a whale in Spijkenisse, near Rotterdam, Netherlands, 2 November 2020",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/714.jpg",
+        "caption1": "Residents brave rains and strong wind as they walk past uprooted trees along a highway in the town of Can-avid in the Eastern Samar province of central Philippines on May 14, 2020 as Typhoon Vongfong makes landfall.",
+        "caption2": "Two people walk along a road past uprooted trees",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/718.png",
+        "caption1": "The video features a triceratops puppet at a dinosaur theme park in Indonesia.",
+        "caption2": "Video shows living triceratops in Indonesia being taken down from a truck.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/725.jpg",
+        "caption1": "the methane bubbles that form naturally and are captured in the winter ice on Lake Abraham in the Canadian Rockies",
+        "caption2": "Holding a block of ice",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/730.jpg",
+        "caption1": "Tree branches reflected on grass",
+        "caption2": "Lois Wright took this photograph in Burnopfield, Durham",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/735.jpg",
+        "caption1": "Environmental activist Greta Thunberg urged China to ban the use of chopsticks.",
+        "caption2": "Swedish environmental activist Greta Thunberg.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/740.jpg",
+        "caption1": "Linking Moderna with Dr. Anthony Fauci, Bill Gates, George Soros, and Jeffrey Epstein all of these public figures and implying they were involved in some nebulous but nefarious plot",
+        "caption2": "The biotechnology company Moderna being linked to Dr. Anthony Fauci, Bill Gates, George Soros, and Jeffrey Epstein are just groundless conspiracy theories",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/747.png",
+        "caption1": "A photograph shows U.S. Sen. Tom Cotton of Arkansas sitting on a pile of gold during his time in the military.",
+        "caption2": "This picture was reportedly taken in May 2003 and shows a member of the 173rd Airborne Brigade after nearly 1,000 gold bars were confiscated from a truck in Kirkuk, Iraq.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/751.jpg",
+        "caption1": "California Governor Jerry Brown \u2018Caught in the Middle\u2019 of a Corruption Investigation",
+        "caption2": "The story California Governor Jerry Brown to a corruption investigation. didn\u2019t stand up to the barest of scrutiny.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/754.jpg",
+        "caption1": "The 1990s movie \"Shazaam\" starred comedian Sinbad as a genie.",
+        "caption2": "Although many viewers claim to clearly recall comedian Sinbad's playing a genie in a movie called \"Shazaam,\" those memories appear to be yet another example of the \"Mandela Effect.\"",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/755.jpg",
+        "caption1": "Kj Blue Camping Trip Tent With Carry Bag for 2 persons",
+        "caption2": "Alice Fria, 57, and her tent mate Ron Doss, 43, settle in for the night in Denver on March 20, 2019. Putting everything inside with them keeps them safe, makes it warmer at night and keeps their area neat while surviving on the streets in Denver.",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/758.jpg",
+        "caption1": "In this photo, he shows off some of the final products that he hopes to sell to music-loving customers.",
+        "caption2": "Adicko Pierre, 62, an Ivorian luthier plays a guitar made by him,",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/767.jpg",
+        "caption1": "A photograph shows a group of buses that were used to ship in paid anti-Trump protesters to Austin, Texas.",
+        "caption2": "Photographs showing long lines of buses were shared with the untrue claim that they were used to ship paid anti-Trump protesters to various cities.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/768.jpg",
+        "caption1": "Human flesh is the finest meat in the world, according to Katy Perry, who puts the \u201cexquisite flavor\u201d of the meat down to \u201cthe taboo nature of the product\u201d and the fact that \u201cforbidden pleasures are always the most delicious.\u201d",
+        "caption2": "The quotes Katy Perry revealed a preference for eating human meat were entirely fabricated and appeared to play on the music video for Perry\u2019s recent single \u201cBon App\u00e9tit,\u201d",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/769.png",
+        "caption1": "Video Show Guns, Violence in Aftermath of Coronavirus Outbreak in China. ",
+        "caption2": "splicing created a false impression coronavirus patients in China were being shot dead.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/770.jpg",
+        "caption1": "The two planets have not been this close to each other in a dark sky for 800 years, and are seen here from southern Spain.",
+        "caption2": "In rare celestial \u2018Great Conjunction\u2019 Saturn and Jupiter in planetary intimacy",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/779.png",
+        "caption1": "Ted Cruz Literally Talks to God.",
+        "caption2": "Ted Cruz never said that he literally talks to God",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/780.jpg",
+        "caption1": "An image showing a cruise ship dumping human waste into the ocean near a coastal city",
+        "caption2": "The image captures a cruise ship dropping anchor off the coast of Punta del Este, Uraguay.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/789.jpg",
+        "caption1": "Dead & Alive Project, by Morgan Wright from New College, Doncaster.",
+        "caption2": "A photo montage showing a woman's face surrounded by flowers",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/795.png",
+        "caption1": "Adam Saleh was ejected from a Delta flight for speaking Arabic.",
+        "caption2": "Adam Saleh, who shared a video of what he claimed was his removal from a Delta flight for speaking Arabic, is a known prankster.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/804.jpg",
+        "caption1": "This a Picture of a Cruise Ship Dumping Human Waste Into the Ocean. ",
+        "caption2": "This is a genuine photograph showing two dark, brownish clouds in the waters surrounding a cruise ship, but it doesn\u2019t document that ship\u2019s dumping human waste into the ocean",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/825.jpg",
+        "caption1": "Tyler has taken photos of families in South Tyneside",
+        "caption2": "A smiling young girl sitting on her garden wall with her parents",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/831.jpg",
+        "caption1": "Construction worker Hiraku Sasaki, 48, washes his body at a Japanese public bath called a 'sento', as he gets together with tattoo artist Asakusa Horikazu to pose for photographs in Tokyo, Japan, September 24, 2020.",
+        "caption2": "A man with body tattoos pours water over his back",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/832.png",
+        "caption1": "Under former U.S. President Donald Trump, Congress passed a law that gives outgoing presidential administrations control of American armed forces after Inauguration Day, for up to 60 days.",
+        "caption2": "While it was true that Congress, under Trump, established a law that requires the GSA to provide services to outgoing presidents for up to 60 days after Inauguration Day, the legislation did not give those politicians or their administrations the authority to direct any federal department, including the armed forces, after their successor takes office.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/833.jpg",
+        "caption1": "President Donald Trump addresses supporters during rally at the Broadmoor World Arena in Colorado Springs, Colorado on February 20, 2020",
+        "caption2": "US President Donald Trump addresses supporters during a Keep America Great campaign rally at the Broadmoor World Arena in Colorado Springs, Colorado, United States on February 20, 2020.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/834.jpg",
+        "caption1": "Photographs show a real trampoline bridge in Paris.",
+        "caption2": "Photos of a \u2018Trampoline Bridge\u2019 Don\u2019t Show a Real Structure",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/835.jpg",
+        "caption1": "A person walking on streets of Kayamandi",
+        "caption2": "Kayamandi is groaning under a fast-growing population",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/837.jpg",
+        "caption1": "Sunset over a river",
+        "caption2": "This photograph was taken by Kevin Billington by the River Itchen in Hampshire",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/852.jpg",
+        "caption1": "The Yorkshire Sculpture Park, just before the last lockdown on the last permitted family trip.",
+        "caption2": "Sculpture of a woman",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/853.jpg",
+        "caption1": "The show is part of the gold-producing nation's newly launched International Gold Fair.",
+        "caption2": "A woman ties and fastens another woman's headwrap at an event in Mali - Friday 12 February 2021",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/857.jpg",
+        "caption1": "The F.B.I. investigated whether the firing of Mr. Comey was a national security threat.",
+        "caption2": "James Comey was fired in May 2017 - just months after Donald Trump took office",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/860.png",
+        "caption1": "A video shows a member of the Maasai tribe whipping people in Kenya who refused to obey the government's self-quarantine orders during the COVID-19 pandemic.",
+        "caption2": "While the person in this video is not a member of the Maasai tribe who was employed by the Kenyan government to whip people who disobeyed self-quarantining orders, the video was taken in Kenya during the COVID-19 pandemic and shows a person who is encouraging (in their own weird way) social distancing.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/866.jpg",
+        "caption1": "Donald Trump's son Eric said that Hispanic people should be sent back to Asia.",
+        "caption2": "A fake news article claimed that Eric Trump said that his father Donald Trump should send Hispanics back to Asia.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/871.jpg",
+        "caption1": "Vladimir Putin said that 'ISIS will regret' assassinating a Russian ambassador since he is 'not Obama' and this is 'not Benghazi.'",
+        "caption2": "A quote ostensibly uttered by Russian president Vladimir Putin criticizing President Obama is a fabricated one.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/873.jpg",
+        "caption1": "Mr Read, 55, took up the hobby for the first time a year ago",
+        "caption2": "Mike Read with his telescope",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/875.jpg",
+        "caption1": "In July 2017, Don Moen died of \"stomach pain\".",
+        "caption2": "Don Moen during the Canada Tour 2015 at the Prayer Palace, Toronto",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/881.jpg",
+        "caption1": "A bird in the hand: \"I found this little wren in Kinlochewe after it had flown indoors by mistake and had tired itself out\"",
+        "caption2": "Wren in hand",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/887.jpg",
+        "caption1": "Bulgarian men perform the traditional \"Horo\" dance in the icy winter waters of the Tundzha river in the town of Kalofer, as part of Epiphany Day celebrations on 6 January 2021.",
+        "caption2": "Despite the current measures to curb the spread of the novel coronavirus\u00a0in Bulgaria, the town of Kalofer organised an Epiphany, a traditional Christian Orthodox feast celebrated on the morning of January 6",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/889.jpg",
+        "caption1": "Hillary Clinton was accidentally killed during the filming of a documentary about her.",
+        "caption2": "Hillary Clinton hadn\u2019t been performing \u201cstunts\u201d for a documentary about her, much less been killed in the process. ",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/892.jpg",
+        "caption1": "In 2014, the Missouri state government issued \"nigger hunting\" licenses.",
+        "caption2": "The pictured license was not issued by the state of Missouri, nor did it provide the holder the legal right to hunt and kill African-Americans.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/898.png",
+        "caption1": "U.S. President Joe Biden signed an executive order giving China access to or control over the U.S. power grid system, causing the Texas power outage of February 2021.",
+        "caption2": "Biden didn\u2019t sign an executive order granting China access to or control over the U.S. power grid system.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/899.jpg",
+        "caption1": "Chester Bennington and Chris Cornell were murdered because they were about to reveal a ring of pedophiles.",
+        "caption2": "BANGKOK, THAILAND-SEPTEMBER 23: Chester Bennington of Linkin Park performs on Linkin Park Live in Bangkok A Thousand Suns World Tour 2011 at Impact Maungthong Thani, September 23, 2011 in Bangkok, Thailand",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/905.jpg",
+        "caption1": "Photographs show a damaged jet engine repaired with seatbelts during a refueling stop",
+        "caption2": "While the pictures do show an engine that has been removed from an aircraft, they do not document a case of substandard repairs",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/908.jpg",
+        "caption1": "Heavy snowfall in the UK. The Met Office issued yellow weather alerts for Saturday",
+        "caption2": "A man clears snow from his car in Auchterarder, Perth and Kinross",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/918.jpg",
+        "caption1": "President Obama is set to replace the bald eagle with Bison as the U.S.'s national animal.",
+        "caption2": "National Bison Legacy Act is to adopt the North American bison as the national mammal of the United States. The legislation made no mention of changing or replacing the bald eagle's status.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/930.jpg",
+        "caption1": "The sandstorms were expected to shift south towards the Yangtze River delta and should clear by Wednesday or Thursday, the environment ministry said.",
+        "caption2": "A woman wearing a head covering is seen in front of the headquarters of China's state media broadcaster CCTV that is shrouded in haze after a sandstorm in the Central Business District of Beijing, on 15 March 2021",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/938.jpeg",
+        "caption1": "A video shows \"CNN reporter\" Jade Sacker filming a pro-Trump mob storm the U.S. Capitol.",
+        "caption2": "Sacker appeared on CNN because she was a witness to the Capitol riot, not because she was employed by CNN",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/939.png",
+        "caption1": "Paints face and hair like the Joker, goes to South Beach, climbs up on a car with an American flag, screams \u201cFucking COVID is over baby!\u201d and makes it rain",
+        "caption2": "Because the virus is not contained in any sense of that word, and because only 13% of Americans are fully vaccinated, the Joker\u2019s assertion that COVID is \u201cover\u201d is \u201cFalse.\u201d",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/943.png",
+        "caption1": "A photograph shows Donald Trump posing with his parents in Ku Klux Klan robes.",
+        "caption2": "This isn\u2019t even the first time that Ku Klux Klan robes have been digitally inserted into an image during the 2016 presidential election.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/956.jpg",
+        "caption1": "Donald Trump said that he planns to eradicate Section 8 housing, welfare, and Medicaid.",
+        "caption2": "Racially-charged reports that Donald Trump said that he wanted to get rid of specific social programs originated from a hoax news site.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/959.jpg",
+        "caption1": "Joe and Joshua appreciate a neighbour's rainbow in support of our NHS.",
+        "caption2": "rainbow children",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/966.png",
+        "caption1": "A white woman named Ricky Ellsworth was killed by a black police officer in Minneapolis, Minnesota",
+        "caption2": "A viral meme got key facts wrong while attempting to make a point about police violence and racial injustice in the U.S.",
+        "actual_context": 1,
+        "pred_context_cosmos": 0
+    },
+    {
+        "img_path": "test/995.jpg",
+        "caption1": "Emma Billingham: \"Jumping on the baking bandwagon with the rest of the UK in lockdown. Eating the mixture is always the best part of the baking process.\"",
+        "caption2": "Woman in kitchen",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    },
+    {
+        "img_path": "test/996.jpg",
+        "caption1": "A Tigrayan forces tank sits abandoned by the side of the road in Mehoni on Friday.",
+        "caption2": "A woman carrying crops walks next to an abandoned tank belonging to Tigrayan forces south of the town of Mehoni, Ethiopia, on December 11, 2020.",
+        "actual_context": 0,
+        "pred_context_cosmos": 1
+    }
+]

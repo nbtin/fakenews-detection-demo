@@ -1,0 +1,914 @@
+{
+    "14.jpg": {
+        "caption1": "U.S. President Donald Trump tweeted that, \"Anyone who ordered a ticket to my rally and didn't attend should be arrested and face very powerful charges.\"",
+        "caption2": "The image claiming ordering a ticket to Trump's rally and arrest on not attending was a fabrication, intended as a spoof poking fun at the president over the disappointing rally attendance.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/trump-rally-arrested-tweet/"
+    },
+    "16.jpg": {
+        "caption1": "On the same day in South Africa, a bird walks along Durban's empty shore where a ban on gatherings kept revellers at bay.",
+        "caption2": "General view of an empty beach with high-rise buildings in the distance.",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/world-africa-55573602"
+    },
+    "21.jpg": {
+        "caption1": "A tribute to Captain Sir Tom Moore lights up Piccadilly Circus, London. The 100-year-old, who raised almost PS33m for NHS charities by walking laps of his garden, died with coronavirus.",
+        "caption2": "A woman plays the violin in Piccadilly Circus during a tribute to Captain Sir Tom Moore on 2 February 2021",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/in-pictures-55941795"
+    },
+    "28.jpg": {
+        "caption1": "On Tuesday police patrol the school where more than 300 children were kidnapped in Katsina state, northern Nigeria...",
+        "caption2": "Police patrol inside the Government Science school in Kankara, in northwestern Katsina state, Nigeria after gunmen abducted students on December 15, 2020.",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/world-africa-55346788"
+    },
+    "30.jpg": {
+        "caption1": "Maine lobsterman catches extremely rare purple lobster",
+        "caption2": "These are not genuine photographs of a purple lobster.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/purple-lobster-caught-in-maine/"
+    },
+    "38.png": {
+        "caption1": "Setting your Apple device's date to 1 January 1970 will reveal a retro-themed Easter egg.",
+        "caption2": "Never put January 1, 1970 as the date on your iPhone, unless you want to block it",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/apples-blast-from-the-past/"
+    },
+    "48.jpg": {
+        "caption1": "The Cow and the Tailor Shop, Rajasthan, by Elizabeth Brooks, from the US",
+        "caption2": "A sacred cow in a street in India",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/in-pictures-53234985"
+    },
+    "49.jpg": {
+        "caption1": "The FBI raided the CDC in the middle of the night to seize data on a link between vaccines and autism.",
+        "caption2": "A known hoax purveyor spread false claims that the FBI \"raided\" the CDC in the middle of the night for data on vaccines and autism on the order of President Trump.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/fbi-raids-cdc-vaccine-data/"
+    },
+    "53.png": {
+        "caption1": "A photograph shows a genuine fossil of a megalodon tooth embedded in a whale bone.",
+        "caption2": "While this image likely shows a genuine megalodon tooth as well as a genuine whale bone, these two artifacts were not discovered at the same time, in the same location, or in this particular arrangement.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/megalodon-tooth-whale-bone-fossil/"
+    },
+    "64.jpg": {
+        "caption1": "Indian paramilitary troops in Srinagar in Kashmir this month. Sixty eight percent of the army's equipment is so old that it is officially considered \"vintage.\"",
+        "caption2": "Kashmir braces for worst as shelling, gunbattles escalate",
+        "context_label": 0,
+        "article_url": "https://www.nytimes.com/2019/03/03/world/asia/india-military-united-states-china.html"
+    },
+    "70.jpg": {
+        "caption1": "Actor Jaden Smith committed suicide in July 2016.",
+        "caption2": "A hoax article reported that the actor (and teenaged son of Jada Pinkett Smith and Will Smith) had killed himself.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/jaden-smith-commits-suicide/"
+    },
+    "71.png": {
+        "caption1": "In Indonesia, in the town of Toraja, a woman leaves her grave after being dead for 3 years.",
+        "caption2": "The photograph does not show an actual zombie.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/woman-comes-out-of-grave/"
+    },
+    "81.png": {
+        "caption1": "Putin\u2019s daughter had died after taking her second dose of the COVID-19 vaccine:",
+        "caption2": "A video supposedly showing Putin\u2019s daughter taking the vaccine actually showed a volunteer unrelated to the Russian president",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/putins-daughter-die-covid-vaccine/"
+    },
+    "94.png": {
+        "caption1": "Since people were not taking the police seriously the Kenyan government started using the Maasai tribe for the curfew",
+        "caption2": "While the person in this video is not a member of the Maasai tribe who was employed by the Kenyan government to whip people who disobeyed self-quarantining orders, the video was taken in Kenya during the COVID-19 pandemic and shows a person who is encouraging (in their own weird way) social distancing.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/kenyan-government-maasai-tribe/"
+    },
+    "100.png": {
+        "caption1": "A white woman named Ricky Ellsworth was killed by a black police officer in Minneapolis, Minnesota",
+        "caption2": "The woman in this photograph is not \u201cRicky Ellsworth.\u201d",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/ricky-ellsworth-black-cop/"
+    },
+    "101.jpg": {
+        "caption1": "In December, the police kept watch over a protest of Prime Minister Viktor Orban's labor policies.",
+        "caption2": "A drawing depicting Hungarian President Viktor Orban is projected on the wall of the TV building during a protest.",
+        "context_label": 0,
+        "article_url": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.telegraph.co.uk%2Fnews%2F2018%2F12%2F18%2Fhungary-protests-spill-fifth-day%2F&psig=AOvVaw0ctzKV3KvRnJxnK_lew_1-&ust=1619187422385000&source=images&cd=vfe&ved=2ahUKEwjc6K2qhZLwAhVO_qQKHW2tBC4Qr4kDegQIARAa"
+    },
+    "102.jpg": {
+        "caption1": "After telling officers he was 'about to die', Floyd eventually lost consciousness and would never regain it",
+        "caption2": "A man kneels in front of a memorial and mural that honors in Houston\u2019s Third Ward, where Floyd grew.",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/in-pictures-55150152"
+    },
+    "104.png": {
+        "caption1": "President Joe Biden signed an executive order in 2021 allowing the U.S. to fund abortions abroad.",
+        "caption2": "None of the moves by Biden, however, authorize the United States government to fund abortions abroad.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/harris-military-against-trumpers/"
+    },
+    "108.jpg": {
+        "caption1": "An image showing a cruise ship dumping human waste into the ocean near a coastal city",
+        "caption2": "This is a genuine photograph showing two dark, brownish clouds in the waters surrounding a cruise ship, but it doesn\u2019t document that ship\u2019s dumping human waste into the ocean",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/cruise-ship-dumps-waste/"
+    },
+    "116.jpg": {
+        "caption1": "Before his death, physicist Stephen Hawking declared his Christian faith after a visit with Pope Francis.",
+        "caption2": "On 14 March 2018, the \u201cCatholics Online\u201d Facebook page posted a photograph of Hawking meeting Pope Francis alongside a fabricated claim about believing in god",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/stephen-hawking-pope-francis/"
+    },
+    "123.jpg": {
+        "caption1": "Mexican drug kingpin Joaquin \"El Chapo\" Guzman donated millions of dollars to Clinton Foundation.",
+        "caption2": "Mexican drug lord 'El Chapo' makes brazen prison escape",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/el-chapo-hillary-clinton-donation/"
+    },
+    "130.png": {
+        "caption1": "A photograph shows salt spilled from a fallen shaker that created the image of Jesus on a table.",
+        "caption2": "The photograph of Jesus made with salt seen here is real, however \u2014 but its explanation is an artistic",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/salt-shaker-jesus/"
+    },
+    "138.jpg": {
+        "caption1": "Experiencing \u201cSatan\u2019s raw power\u201d is something everybody should experience at least once in their lifetime, according to Katy Perry, who advised fans to \u201cadd praying to Satan to your bucket list.\u201c",
+        "caption2": "There is no evidence that the singer Katy Perry said made comments about people pray to Satan",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/katy-perry-satan-bucket-list/"
+    },
+    "147.jpg": {
+        "caption1": "Visitors approach the Meroe Pyramids in northern Sudan on Friday.",
+        "caption2": "A woman walks with children towards the Meroe Pyramids. Nearby a man rides a camel.",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/world-africa-56025910"
+    },
+    "152.jpg": {
+        "caption1": "An aerial view of an empty Bournemouth beach",
+        "caption2": "Easter weekend was quiet, with the government urging people to stay at home. This is Bournemouth beach on Good Friday.",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/in-pictures-55317262"
+    },
+    "171.png": {
+        "caption1": "In December 2015, a photograph of Republican presidential candidate Ted Cruz along with a quote uttered by him about his relationship with God started circulating around the internet",
+        "caption2": "No record of the Republican candidate  Ted Cruz saying that he \u201cliterally\u201d speaks to God was found.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/ted-cruz-literally-talks-god/"
+    },
+    "175.png": {
+        "caption1": "A photograph taken at the 'Million MAGA March' in November 2020 shows Nazi and Confederate flags on display.",
+        "caption2": "The photograph seen above was taken in a different time and place that had no connection to \u201cMillion MAGA March.\u201d",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/million-maga-nazi-banner/"
+    },
+    "189.jpg": {
+        "caption1": "The F.B.I. investigated whether the firing of Mr. Comey was a national security threat.",
+        "caption2": "James Comey was fired in May 2017 - just months after Donald Trump took office.",
+        "context_label": 0,
+        "article_url": "https://www.nytimes.com/2019/01/11/us/politics/fbi-trump-russia-inquiry.html"
+    },
+    "210.png": {
+        "caption1": "In December 2020, a video supposedly showing a living triceratops in Indonesia being taken down from a truck a bed was widely circulated online",
+        "caption2": "This video actually features a triceratops puppet at a dinosaur theme park in Indonesia called Mojosemi Forest Park.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/living-triceratops-indonesia/"
+    },
+    "218.jpg": {
+        "caption1": "A picture purportedly showing Goldie Hawn and Kurt Russell both wearing Donald Trump t-shirts is spreading across social media.",
+        "caption2": "Kurt Russell and Goldie Hawn endorse Trump. Love Kurt's shirt! I've always loved both of them!",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/goldie-hawn-kurt-russell-trump/"
+    },
+    "219.jpg": {
+        "caption1": "A San Francisco mural portrait of Greta Thunberg used 700 gallons of spray paint.",
+        "caption2": "The San Francisco mural of Greta Thunberg used a little over 12 gallons of aerosol spray paint",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/greta-mural-spray-paint/"
+    },
+    "236.png": {
+        "caption1": "After Hurricane Laura in August 2020, a photograph supposedly showing two sharks that got stuck in power lines several feet above the ground widely circulated on social media",
+        "caption2": "This was a genuine picture of several sharks (and other marine animals) stuck in a collection of power lines. However, Hurricane Laura (or any other weather event) was not the culprit for this bizarre scene.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/sharks-on-power-lines-hurricane/"
+    },
+    "254.jpg": {
+        "caption1": "According to congressional sources Representative Adam Schiff used tax payer money to reach a sexual harassment settlement with a 19 year old male in 2013.",
+        "caption2": "In early February 2019, social media trolls attempted to spread a claim that \u201ccongressional sources\u201d had confirmed Rep. Adam Schiff (D-California) \u201cused taxpayer money\u201d to cover up a sexual-harassment accusation",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/adam-schiff-settle-claim/"
+    },
+    "256.jpg": {
+        "caption1": "A photograph shows a packed arena for President Trump's June 2020 rally in Tulsa, Oklahoma.",
+        "caption2": "The upper section of the BOK Center in Tulsa, Oklahoma, is partially empty as President Donald Trump speaks at his campaign rally on June 20.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/trump-tulsa-rally-crowd/"
+    },
+    "276.jpg": {
+        "caption1": "Nicaraguan President Daniel Ortega and his wife, Vice President Rosario Murillo, in November.",
+        "caption2": "The Nicaraguan president is one of the guests at the 26th Ibero-American Summit of Heads of State.",
+        "context_label": 0,
+        "article_url": "https://www.nytimes.com/es/2019/01/12/espanol/america-latina/renuncia-rafael-solis-nicaragua.html"
+    },
+    "287.jpg": {
+        "caption1": "President Trump respectfully touches the face of a U.S veteran who lost both arms, knowing he could no longer enjoy the feel of a handshake.",
+        "caption2": "This is a genuine photograph of Trump briefly touching the cheek of a supporter with two prosthetic arms. However, the accompanying backstory about the supporter being a veteran is inaccurate.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/trump-touch-face-of-veteran/"
+    },
+    "302.jpg": {
+        "caption1": "Alison Escobar's artistically taken shot of her three-year-old daughter reflected in glass while drawing with chalk.",
+        "caption2": "Girl reflected in glass",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/uk-scotland-54058547"
+    },
+    "312.jpg": {
+        "caption1": "Office worker Hideyuki Togashi, 48, shows his tattoos as he poses for a photograph at a park near his house in Tokyo, Japan, September 7, 2020",
+        "caption2": "A man stands on grass wearing shorts, showing a prosthetic leg and a tattooed leg",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/in-pictures-54903538"
+    },
+    "319.png": {
+        "caption1": "President Obama issued an order for abortions to be celebrated on Mother's Day.",
+        "caption2": "President Obama had ordered abortions were to be celebrated on Mother\u2019s Day as part of a new \u2018National Abortion Freedom Day\u2019 was posted on Facebook via \u201cFox News The FB Page\u201d and is false",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/obama-mothers-day-abortions/"
+    },
+    "341.jpg": {
+        "caption1": "Press assembly lines inside the Dasung factory.",
+        "caption2": "Moon Seung at his auto parts factory in Incheon, South Korea.",
+        "context_label": 0,
+        "article_url": "https://www.nytimes.com/2019/01/09/business/south-korea-economy.html"
+    },
+    "360.jpg": {
+        "caption1": "Meanwhile, teams battle it out at the annual canoe race held in Bangui, the capital of the Central African Republic, on Tuesday.",
+        "caption2": "Men paddle in a huge canoe.",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/world-africa-55173312"
+    },
+    "362.jpg": {
+        "caption1": "Did Donald trump really say he would not rule out using nuclear weapons against Isis or Mexico if they refuse to build the wall?",
+        "caption2": "No, Donald Trump didn't suggest dropping nuclear bombs on Mexico if they refused to build the wall.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/trump-to-nuke-mexico/"
+    },
+    "363.jpg": {
+        "caption1": "Joe and Joshua appreciate a neighbour's rainbow in support of our NHS.",
+        "caption2": "rainbow children",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/uk-scotland-54616107"
+    },
+    "370.jpg": {
+        "caption1": "On Monday Bernie Sanders held a press gathering with radical anti-Semite Rep. Rashida Tlaib to promote their vision for America.",
+        "caption2": "Sanders and Tlaib were at a food pantry, not a grocery store, and they were talking about basic services like water and power being cut off to low-income residents, not \u201cpushing socialism.\u201d",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/sanders-and-tlaib-shelves/"
+    },
+    "372.jpg": {
+        "caption1": "Former Alaska governor (and John McCain\u2019s running mate in the 2008 Presidential race) Sarah Palin took to Facebook to demand a ban on \u201cArabic numerals\u201d in U.S. schools",
+        "caption2": "A story that the former Alaska governor wants \"Arabic numbers\" out of schools originated from a fake news web site.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/sarah-palin-arabic-numerals/"
+    },
+    "376.jpg": {
+        "caption1": "Ann Antonopoulou: \"Our Parson Russell Terrier Snoopy's new cave bed just arrived and he's loving it, especially in this very cold weather of early February in Edinburgh. He refuses to come out.\"",
+        "caption2": "Dog under a cover",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/in-pictures-56015511"
+    },
+    "377.jpg": {
+        "caption1": "Hillary Clinton Said Children Should Be Raised by the State",
+        "caption2": "A fabricated quote from Hillary Clinton saying children should be raised and trained by the state originated with one of many sites dedicated to spreading misinformation about presidential candidates.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/clinton-takes-village-quote/"
+    },
+    "385.jpg": {
+        "caption1": "John Myhre Frederiksen used a fisheye lens to take this photo in Copenhagen.",
+        "caption2": "Autumn trees",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/in-pictures-54908247"
+    },
+    "390.jpg": {
+        "caption1": "A photograph shows a 6-year-old child working as a coal miner.",
+        "caption2": "The original photograph looks to be merely a posed picture of a young boy dressed up with some props",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/child-coal-miner/"
+    },
+    "394.png": {
+        "caption1": "In March 2020, a video circulated on social media supposedly showing a 5G tower being torn down in China because people feared it was causing the COVID-19 coronavirus disease pandemic.",
+        "caption2": "The video shows protesters in Hong Kong in August 2019 (before the COVID-19 pandemic) tearing down a surveillance tower.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/5g-tower-torn-down-china-covid/"
+    },
+    "396.jpg": {
+        "caption1": "On Monday Bernie Sanders held a press gathering with radical anti-Semite Rep. Rashida Tlaib to promote their vision for America.",
+        "caption2": "Sanders and Tlaib were at a food pantry, not a grocery store, and they were talking about basic services like water and power being cut off to low-income residents, not \u201cpushing socialism.\u201d",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/sanders-and-tlaib-shelves/"
+    },
+    "400.png": {
+        "caption1": "A white woman named Ricky Ellsworth was killed by a black police officer in Minneapolis, Minnesota",
+        "caption2": "A viral meme got key facts wrong while attempting to make a point about police violence and racial injustice in the U.S.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/ricky-ellsworth-black-cop/"
+    },
+    "402.jpg": {
+        "caption1": "KGB agent admitted the band the Sex Pistols were an operation backed by the former Soviet Union to destabilize Western democracy",
+        "caption2": "The Engine Rooms Southampton - October 4th 2015: Former Sex Pistol John Lydon with Public Image Ltd (PiL) performing at the Engine Rooms, Southampton, October 4, 2015 in Southampton, Hampshire, UK",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/kgb-agent-sex-pistols/"
+    },
+    "404.jpg": {
+        "caption1": "Trampoline Bridge across the Seine, Paris",
+        "caption2": "Photographs purportedly showing a \u201ctrampoline bridge\u201d in Paris is a concept design created for an architecture competition",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/trampoline-bridge-paris-photos/"
+    },
+    "405.png": {
+        "caption1": "Eminem biopic '8 Mile' will return with a sequel in late 2016.",
+        "caption2": "A fake news site caused a stir by claiming that '8 Mile 2' would be released in December 2016.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/8-mile-sequel-2016/"
+    },
+    "407.jpg": {
+        "caption1": "A photograph shows President Obama, Dr. Anthony Fauci, and Melinda Gates at a laboratory in Wuhan, China, in 2015.",
+        "caption2": "President Barack Obama and Dr. Fauci visiting NIH lab to learn about the results of the experimental Ebola vaccine",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/obama-fauci-gates-wuhan-lab/"
+    },
+    "411.jpg": {
+        "caption1": "Televangelist Joel Osteen endorsed Donald Trump.",
+        "caption2": "While Joel Osteen complimented Donald Trump during a radio interview, he did not endorse him for president.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/joel-osteen-donald-trump/"
+    },
+    "412.png": {
+        "caption1": "A viral photograph shows Donald Trump with E. Jean Carroll, who's accused him of past sexual assault, proving he was lying when he said he didn't know her.",
+        "caption2": "This is a picture of Harth, not Carroll, although some users shared it with the erroneous belief that it undermined Trump\u2019s claim that he didn\u2019t know Carroll.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/photograph-trump-accuser/"
+    },
+    "415.jpg": {
+        "caption1": "A photograph shows a soldier carrying a donkey on his back during World War II to prevent the animal from inadvertently setting off landmines.",
+        "caption2": "The picture actually dates from 1958, during the Algerian War (i.e., a war for independence waged against French forces in Colonial Algeria). And it depicts a starving donkey that was rescued by a member of the French Foreign Legion who carried it back to his base",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/soldier-carrying-donkey/"
+    },
+    "416.jpg": {
+        "caption1": "A photograph shows buses purchased by Black Lives Matter to \"transport members to riots.\"",
+        "caption2": "Toronto Raptors arrive at Disney Campus in Black Lives Matter Buses.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/blm-buses-photo/"
+    },
+    "419.jpg": {
+        "caption1": "Projecting water 105m (344.5ft) into the air, the new fountain located at The Pointe on Palm Jumeirah in Dubai recently broke records as the largest of its kind in the world. The waterfront attraction features more than 3000 multi-coloured lights.",
+        "caption2": "The Palm Fountain, Palm Jumeirah, Dubai",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/in-pictures-54658776"
+    },
+    "420.png": {
+        "caption1": "An image featuring a picture of actress Jodie Foster alongside a quote by her about wealth disparity in the United States",
+        "caption2": "This quote about wealth disparity in the United States did not originate with Jodie Foster",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/attacking-the-rich/"
+    },
+    "424.jpg": {
+        "caption1": "Terry the Turtle flipping the bird, by Mark Fitzpatrick, Lady Elliot Island, Queensland, Australia",
+        "caption2": "A turtle appearing to be gesticulating at the camera",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/in-pictures-54118899"
+    },
+    "426.jpg": {
+        "caption1": "An episode of \"The Simpsons\" predicted that U.S. President Donald Trump would cancel his trip to Denmark after the prime minister refused to sell Greenland to the United States.",
+        "caption2": "Trump was mentioned in Simpsons seasons, but never as president or a potential buyer of Greenland",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/simpsons-trump-buy-greenland/"
+    },
+    "433.png": {
+        "caption1": "A video shows Anderson Cooper laughing uncontrollably after Kellyanne Conway used the phrase \"alternative facts.\"",
+        "caption2": "This video was compiled using footage showing Cooper getting the giggles during a 2011 episode of AC360, as the host was reporting on a story about French actor Gerard Depardieu\u2019s urinating on a plane",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/anderson-cooper-laughing-at-kellyanne-conway/"
+    },
+    "435.jpg": {
+        "caption1": "On Monday Bernie Sanders held a press gathering with radical anti-Semite Rep. Rashida Tlaib to promote their vision for America.",
+        "caption2": "Sanders and Tlaib were at a food pantry, not a grocery store, and they were talking about basic services like water and power being cut off to low-income residents, not \u201cpushing socialism.\u201d",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/sanders-and-tlaib-shelves/"
+    },
+    "445.jpg": {
+        "caption1": "President Trump's second wife, Marla Maples, died in a plane crash in April 2017.",
+        "caption2": "There is no truth to the sensational headline that Trump\u2019s Ex-Wife Marla Maples Died After Airline Accident",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/marla-maples-plane-crash/"
+    },
+    "451.jpg": {
+        "caption1": "An Army soldier checks his sword during the rehearsal for the Republic Day parade, in New Delhi, India January 18, 2021.",
+        "caption2": "Soldier in the Indian Army",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/in-pictures-55767001"
+    },
+    "459.jpg": {
+        "caption1": "On Tuesday, a man rides his bike in Senegal's southern Casamance region.",
+        "caption2": "A man riding his bike in Ziguinchor looks into the camera.",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/world-africa-56025910"
+    },
+    "467.jpg": {
+        "caption1": "Morris Leonard came across this space invader in Leven.",
+        "caption2": "Gull in a car park in Leven",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/uk-scotland-53485184"
+    },
+    "480.jpg": {
+        "caption1": "Ulta Beauty will close its doors following a buyout by competitor Sephora.",
+        "caption2": "As of May 2017, multiple sources report that Ulta is actually opening new stores, not closing them.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/ulta-closing-sephora-buyout/"
+    },
+    "486.png": {
+        "caption1": "Fox & Friends co-host Brian Kilmeade blamed Prince Harry and the former Meghan Markle for Prince Philip's death.",
+        "caption2": "Brian Kilmeade only insinuate and did not outright blame Harry and Meghan\u2019s interview with Winfrey for the death of Philip",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/fox-friends-kilmeade-philip/"
+    },
+    "492.png": {
+        "caption1": "Indonesian villagers performed a rite that brought a dead woman back to life after three years in the grave.",
+        "caption2": "The photograph does not show an actual zombie.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/woman-comes-out-of-grave/"
+    },
+    "497.jpg": {
+        "caption1": "May 2016: Donald Trump suggested he'd use nuclear weapons against Mexico if they refused to build and pay for a wall.",
+        "caption2": "No, Donald Trump didn't suggest dropping nuclear bombs on Mexico if they refused to build the wall.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/trump-to-nuke-mexico/"
+    },
+    "498.jpg": {
+        "caption1": "A child in red boots standing in a puddle",
+        "caption2": "This photograph was taken by Louise Smart during a walk with her sons in Maldon, Essex",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/uk-england-55426979"
+    },
+    "503.jpg": {
+        "caption1": "A man watering a tree in an attempt to hang himself from it represented the current era of multiculturalism in Europe",
+        "caption2": "The artwork shown was created by Friedrich Kunath in 2010 for a solo exhibition at the Andrea Rosen Gallery in New York",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/melting-pot-multiculturalism-artwork/"
+    },
+    "504.jpg": {
+        "caption1": "There were performances galore at the stadium...",
+        "caption2": "Members of Independence troop performs at the Eagles Square in Abuja, Nigeria during the countrys 60th Independence Celebration on October 1, 2020",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/world-africa-54371661"
+    },
+    "505.png": {
+        "caption1": "U.S. President Joe Biden said: \"Hell, I like all people. White, LGBTQ, even some colored folk.\" He also said: \"Negroes should not be allowed to hold positions of power in government.\"",
+        "caption2": "Biden never said the words \u201cnegroes should not be allowed to hold positions of power in government.\u201d",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/biden-negroes-colored-quotes/"
+    },
+    "514.jpg": {
+        "caption1": "A bird in the hand: Hayley Grant had this robin eating mealworms from her hand in her back garden in Wick, Caithness",
+        "caption2": "Robin",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/uk-scotland-56405150"
+    },
+    "533.png": {
+        "caption1": "Pastor Rick Scarborough asserted that breast cancer is caused by women's \"dirty\" thoughts.",
+        "caption2": "The portions attributing the statements about breast cancer to Pastor Scarborough were not highlighted as truthful information",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/pastor-scarborough-cancer/"
+    },
+    "534.png": {
+        "caption1": "Images shared widely in September 2019 showed people easily climbing the same fence, or same type of fence, that U.S. President Donald Trump said \"can't be climbed.\"",
+        "caption2": "The video footage that showed two young men quickly scaling a fence, with backpacks that may have contained drugs, was captured in March 2016, at a section of border fencing near Nogales, Arizona",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/border-wall-fence-trump-climb/"
+    },
+    "536.jpg": {
+        "caption1": "The Annabelle doll that The Conjuring and Annabelle franchises used.",
+        "caption2": "Did the Possessed Annabelle Doll Actually Escape the Warren Museum?",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/annabelle-doll-escape-museum/"
+    },
+    "542.jpg": {
+        "caption1": "Gloucester and Scotland international rugby player Alex Craig works out at his parents' farm in Castle Douglas, Scotland",
+        "caption2": "An athlete uses a piece of farm machinery to do pull-ups on",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/in-pictures-52827157"
+    },
+    "552.png": {
+        "caption1": "Social media users began circulating a decades-old photograph purporting to show Maxwell with a young Boris Johnson, now the United Kingdom\u2019s prime minister:",
+        "caption2": "The woman seen with Johnson in this picture is Allegra Mostyn-Owen, daughter of the art historian William Mostyn-Owen and Italian writer Gaia Servadio, whom Johnson married in 1987.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/boris-johnson-ghislaine-maxwell/"
+    },
+    "554.jpg": {
+        "caption1": "A photograph shows a group of buses that were used to ship in paid anti-Trump protesters to Austin, Texas.",
+        "caption2": "The buses seen here were lined up outside of the Austin Convention Center, where the Tableau Conference, which had about 11,000 attendees, was taking place",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/anti-trump-protesters-bused-into-austin/"
+    },
+    "555.jpg": {
+        "caption1": "it's a runway with a difference, beneath the baobab trees near Senegal's capital.",
+        "caption2": "A fashion model walks down the runway during Dakar Fashion Week in Dakar on December 12, 2020",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/world-africa-55346788"
+    },
+    "557.jpg": {
+        "caption1": "National Wallace Monument framed through the arch of the former St Mary's Church",
+        "caption2": "Then the sun came out and lit up the Wallace Monument beautifully",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/uk-scotland-54958656"
+    },
+    "565.png": {
+        "caption1": "President Obama has overruled Donald Trump's victory in the 2016 presidential election and ordered a revote.",
+        "caption2": "Reports that President Obama has overruled Donald Trump's presidential victory and ordered a revote for December 15 are fake news.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/obama-signs-executive-order-declaring-investigation-into-election-results/"
+    },
+    "569.jpg": {
+        "caption1": "Angry opposition supporters take to the streets of Niamey on Thursday, after ruling party candidate Mohamed Bazoum wins the presidential election.",
+        "caption2": "A masked man readies a slingshot on a street with protesters and tear gas behind him.",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/world-africa-56194032"
+    },
+    "571.jpg": {
+        "caption1": "Republican presidential candidate Donald Trump leaked classified information about a U.S. military base in Saudi Arabia after receiving his first national security intelligence briefing.",
+        "caption2": "There is no evidence that Donald Trump received a national security intelligence briefing before his 29 July 2016 speech in Colorado Springs, nor did he say anything he hasn\u2019t said before about U.S. military bases in Saudi Arabia.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/trump-leaks-classified-info/"
+    },
+    "580.jpg": {
+        "caption1": "A \"motivational poster\" shows a former cheerleader turned Air Force sniper.",
+        "caption2": "MOODY AIR FORCE BASE, Ga. -- Senior Airman Polly-Jan Bobseine, 823rd Security Forces Squadron fire team member, takes aim behind a M-24 Sniper Rifle to hone her close precision engagement skills during proficiency weapons training at a deployed location. Airman Bobseine was chosen out of more than 270,000 enlisted Airmen as one of the Air Force\u2019s 12 Outstanding Airmen of the Year.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/cheerleader-sniper/"
+    },
+    "581.jpg": {
+        "caption1": "Edward Snowden (the NSA whistleblower) has made another astonishing revelation. He apparently has documents that prove Osama Bin Laden is on the CIA payroll and currently living a luxury lifestyle in the Bahamas.",
+        "caption2": "Edward Snowden did not claim Osama bin Laden was alive and living lavishly in the Bahamas on the CIA payroll.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/snowden-bin-laden-alive/"
+    },
+    "584.jpg": {
+        "caption1": "Photographs show icebergs with multi-colored striping taken in Lake Michigan.",
+        "caption2": "These striking pictures of icebergs with multi-colored stripes or banding were taken by a Norwegian sailor named Oyvind Tangen while he was aboard a research ship about 1,700 miles south of Cape Town, South Africa",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/striped-icebergs/"
+    },
+    "586.png": {
+        "caption1": "A bear chasing a bicyclist down a mountain road",
+        "caption2": "This is not a genuine photograph of a bear chasing a cyclist",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/bear-chases-bike/"
+    },
+    "589.jpg": {
+        "caption1": "A KGB agent admitted that the Sex Pistols were financed by the USSR to destabilize Western democracy.",
+        "caption2": "The Engine Rooms Southampton - October 4th 2015: Former Sex Pistol John Lydon with Public Image Ltd (PiL) performing at the Engine Rooms, Southampton, October 4, 2015 in Southampton, Hampshire, UK",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/kgb-agent-sex-pistols/"
+    },
+    "598.jpg": {
+        "caption1": "Ruins of the city of Vukovar, Croatia, in March 1992",
+        "caption2": "A ruined landscape of houses and trees",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/in-pictures-55245355"
+    },
+    "604.jpg": {
+        "caption1": "Children look at a magazine during a break from selling fruit in Senegal's capital, Dakar, on Sunday.",
+        "caption2": "Girls stand on the rocks looking at a magazine.",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/world-africa-56278224"
+    },
+    "606.jpg": {
+        "caption1": "President Trump's second wife, Marla Maples, died in a plane crash in April 2017.",
+        "caption2": "There is no truth to the sensational headline that Trump' Ex-Wife Marla Maples Died After Airline Accident",
+        "context_label": 1,
+        "article_url": "snopes.com/fact-check/marla-maples-plane-crash/"
+    },
+    "612.jpg": {
+        "caption1": "Paula White Selling Prayer Flags Blessed by Donald Trump.",
+        "caption2": "A hoax article reported that televangelist Paula White was selling American flags that had been personally blessed by the United States President.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/paula-white-prayer-flags/"
+    },
+    "618.jpg": {
+        "caption1": "U.S. Sen. Bernie Sanders and U.S. Rep. Rashida Tlaib \"pushed socialism\" while standing in front of empty grocery-store shelves.",
+        "caption2": "Sanders and Tlaib were at a food pantry, not a grocery store, and they were talking about basic services like water and power being cut off to low-income residents, not \u201cpushing socialism.\u201d",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/sanders-and-tlaib-shelves/"
+    },
+    "630.jpg": {
+        "caption1": "A video shows a naked child using bedsheets to escape from an upper story of Buckingham Palace.",
+        "caption2": "Man clambering out of Buckingham Palace window naked is sadly a hoax",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/escape-from-buckingham-palace/"
+    },
+    "645.jpg": {
+        "caption1": "Troy takes pictures for the Wicked social media accounts, which often involves photographing famous faces like Warwick Davis when they visit the show",
+        "caption2": "Warwick Davis and the cast of Wicked",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/uk-england-london-55274219"
+    },
+    "646.jpg": {
+        "caption1": "A photograph shows a purple lobster caught in Maine.",
+        "caption2": "These are not genuine photographs of a purple lobster.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/purple-lobster-caught-in-maine/"
+    },
+    "660.jpg": {
+        "caption1": "Pupils from Marden Bridge Middle School in Whitley Bay, Tyne and Wear, greet each other on their first day of term as schools in England reopen",
+        "caption2": "Two grils wearing masks embrace each other",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/in-pictures-55317262"
+    },
+    "661.jpg": {
+        "caption1": "The coffin of the Ebola victim is carried away.",
+        "caption2": "The Red Cross burial workers carry a box containing the body of an 11-month-old girl",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/in-pictures-52632394"
+    },
+    "679.jpg": {
+        "caption1": "Drum cover model Erlin Ibreck at Trafalgar Square, London, 1966",
+        "caption2": "Woman outdoors holding a bird",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/in-pictures-56421311"
+    },
+    "707.png": {
+        "caption1": "Pfizer CEO Albert Bourla refused to take the Pfizer-BioNTech COVID-19 vaccine.",
+        "caption2": "Pfizer CEO Albert Bourla said that the sooner he can, he will get vaccinated",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/pfizer-ceo-covid19-vaccine/"
+    },
+    "714.jpg": {
+        "caption1": "Residents brave rains and strong wind as they walk past uprooted trees along a highway in the town of Can-avid in the Eastern Samar province of central Philippines on May 14, 2020 as Typhoon Vongfong makes landfall.",
+        "caption2": "Two people walk along a road past uprooted trees",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/in-pictures-52679694"
+    },
+    "718.png": {
+        "caption1": "The video features a triceratops puppet at a dinosaur theme park in Indonesia.",
+        "caption2": "Video shows living triceratops in Indonesia being taken down from a truck.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/living-triceratops-indonesia/"
+    },
+    "725.jpg": {
+        "caption1": "the methane bubbles that form naturally and are captured in the winter ice on Lake Abraham in the Canadian Rockies",
+        "caption2": "Holding a block of ice",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/in-pictures-55857301"
+    },
+    "730.jpg": {
+        "caption1": "Tree branches reflected on grass",
+        "caption2": "Lois Wright took this photograph in Burnopfield, Durham",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/uk-england-55620370"
+    },
+    "740.jpg": {
+        "caption1": "Linking Moderna with Dr. Anthony Fauci, Bill Gates, George Soros, and Jeffrey Epstein all of these public figures and implying they were involved in some nebulous but nefarious plot",
+        "caption2": "The biotechnology company Moderna being linked to Dr. Anthony Fauci, Bill Gates, George Soros, and Jeffrey Epstein are just groundless conspiracy theories",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/moderna-conspiracy/"
+    },
+    "747.png": {
+        "caption1": "A photograph shows U.S. Sen. Tom Cotton of Arkansas sitting on a pile of gold during his time in the military.",
+        "caption2": "This picture was reportedly taken in May 2003 and shows a member of the 173rd Airborne Brigade after nearly 1,000 gold bars were confiscated from a truck in Kirkuk, Iraq.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/senator-tom-cotton-gold-pile/"
+    },
+    "751.jpg": {
+        "caption1": "California Governor Jerry Brown \u2018Caught in the Middle\u2019 of a Corruption Investigation",
+        "caption2": "The story California Governor Jerry Brown to a corruption investigation. didn\u2019t stand up to the barest of scrutiny.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/jerry-brown-investigation/"
+    },
+    "754.jpg": {
+        "caption1": "The 1990s movie \"Shazaam\" starred comedian Sinbad as a genie.",
+        "caption2": "Although many viewers claim to clearly recall comedian Sinbad's playing a genie in a movie called \"Shazaam,\" those memories appear to be yet another example of the \"Mandela Effect.\"",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/sinbad-movie-shazaam/"
+    },
+    "755.jpg": {
+        "caption1": "Kj Blue Camping Trip Tent With Carry Bag for 2 persons",
+        "caption2": "Alice Fria, 57, and her tent mate Ron Doss, 43, settle in for the night in Denver on March 20, 2019. Putting everything inside with them keeps them safe, makes it warmer at night and keeps their area neat while surviving on the streets in Denver.",
+        "context_label": 0,
+        "article_url": "https://www.denverpost.com/2019/05/31/denver-mayor-issues-giellis-hancock/"
+    },
+    "758.jpg": {
+        "caption1": "In this photo, he shows off some of the final products that he hopes to sell to music-loving customers.",
+        "caption2": "Adicko Pierre, 62, an Ivorian luthier plays a guitar made by him,",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/world-africa-54371661"
+    },
+    "767.jpg": {
+        "caption1": "A photograph shows a group of buses that were used to ship in paid anti-Trump protesters to Austin, Texas.",
+        "caption2": "Photographs showing long lines of buses were shared with the untrue claim that they were used to ship paid anti-Trump protesters to various cities.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/anti-trump-protesters-bused-into-austin/"
+    },
+    "768.jpg": {
+        "caption1": "Human flesh is the finest meat in the world, according to Katy Perry, who puts the \u201cexquisite flavor\u201d of the meat down to \u201cthe taboo nature of the product\u201d and the fact that \u201cforbidden pleasures are always the most delicious.\u201d",
+        "caption2": "The quotes Katy Perry revealed a preference for eating human meat were entirely fabricated and appeared to play on the music video for Perry\u2019s recent single \u201cBon App\u00e9tit,\u201d",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/katy-perry-cannibalism/"
+    },
+    "769.png": {
+        "caption1": "Video Show Guns, Violence in Aftermath of Coronavirus Outbreak in China. ",
+        "caption2": "splicing created a false impression coronavirus patients in China were being shot dead.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/violent-aftermath-of-coronavirus/"
+    },
+    "779.png": {
+        "caption1": "Ted Cruz Literally Talks to God.",
+        "caption2": "Ted Cruz never said that he literally talks to God",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/ted-cruz-literally-talks-god/"
+    },
+    "780.jpg": {
+        "caption1": "An image showing a cruise ship dumping human waste into the ocean near a coastal city",
+        "caption2": "The image captures a cruise ship dropping anchor off the coast of Punta del Este, Uraguay.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/cruise-ship-dumps-waste/"
+    },
+    "789.jpg": {
+        "caption1": "Dead & Alive Project, by Morgan Wright from New College, Doncaster.",
+        "caption2": "A photo montage showing a woman's face surrounded by flowers",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/in-pictures-52968564"
+    },
+    "795.png": {
+        "caption1": "Adam Saleh was ejected from a Delta flight for speaking Arabic.",
+        "caption2": "Adam Saleh, who shared a video of what he claimed was his removal from a Delta flight for speaking Arabic, is a known prankster.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/did-delta-eject-passenger-adam-saleh-for-speaking-arabic/"
+    },
+    "804.jpg": {
+        "caption1": "This a Picture of a Cruise Ship Dumping Human Waste Into the Ocean. ",
+        "caption2": "This is a genuine photograph showing two dark, brownish clouds in the waters surrounding a cruise ship, but it doesn\u2019t document that ship\u2019s dumping human waste into the ocean",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/cruise-ship-dumps-waste/"
+    },
+    "825.jpg": {
+        "caption1": "Tyler has taken photos of families in South Tyneside",
+        "caption2": "A smiling young girl sitting on her garden wall with her parents",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/uk-england-tyne-53279657"
+    },
+    "831.jpg": {
+        "caption1": "Construction worker Hiraku Sasaki, 48, washes his body at a Japanese public bath called a 'sento', as he gets together with tattoo artist Asakusa Horikazu to pose for photographs in Tokyo, Japan, September 24, 2020.",
+        "caption2": "A man with body tattoos pours water over his back",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/in-pictures-54903538"
+    },
+    "832.png": {
+        "caption1": "Under former U.S. President Donald Trump, Congress passed a law that gives outgoing presidential administrations control of American armed forces after Inauguration Day, for up to 60 days.",
+        "caption2": "While it was true that Congress, under Trump, established a law that requires the GSA to provide services to outgoing presidents for up to 60 days after Inauguration Day, the legislation did not give those politicians or their administrations the authority to direct any federal department, including the armed forces, after their successor takes office.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/military-trump-60-days/"
+    },
+    "834.jpg": {
+        "caption1": "Photographs show a real trampoline bridge in Paris.",
+        "caption2": "Photos of a \u2018Trampoline Bridge\u2019 Don\u2019t Show a Real Structure",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/trampoline-bridge-paris-photos/"
+    },
+    "835.jpg": {
+        "caption1": "A person walking on streets of Kayamandi",
+        "caption2": "Kayamandi is groaning under a fast-growing population",
+        "context_label": 0,
+        "article_url": "https://www.nytimes.com/2019/03/09/world/africa/stellenbosch-south-africa.html"
+    },
+    "837.jpg": {
+        "caption1": "Sunset over a river",
+        "caption2": "This photograph was taken by Kevin Billington by the River Itchen in Hampshire",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/uk-england-56320244"
+    },
+    "852.jpg": {
+        "caption1": "The Yorkshire Sculpture Park, just before the last lockdown on the last permitted family trip.",
+        "caption2": "Sculpture of a woman",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/in-pictures-56538913"
+    },
+    "857.jpg": {
+        "caption1": "The F.B.I. investigated whether the firing of Mr. Comey was a national security threat.",
+        "caption2": "James Comey was fired in May 2017 - just months after Donald Trump took office",
+        "context_label": 0,
+        "article_url": "https://www.nytimes.com/2019/01/11/us/politics/fbi-trump-russia-inquiry.html"
+    },
+    "860.png": {
+        "caption1": "A video shows a member of the Maasai tribe whipping people in Kenya who refused to obey the government's self-quarantine orders during the COVID-19 pandemic.",
+        "caption2": "While the person in this video is not a member of the Maasai tribe who was employed by the Kenyan government to whip people who disobeyed self-quarantining orders, the video was taken in Kenya during the COVID-19 pandemic and shows a person who is encouraging (in their own weird way) social distancing.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/kenyan-government-maasai-tribe/"
+    },
+    "866.jpg": {
+        "caption1": "Donald Trump's son Eric said that Hispanic people should be sent back to Asia.",
+        "caption2": "A fake news article claimed that Eric Trump said that his father Donald Trump should send Hispanics back to Asia.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/eric-trump-hispanics-asian-quote/"
+    },
+    "871.jpg": {
+        "caption1": "Vladimir Putin said that 'ISIS will regret' assassinating a Russian ambassador since he is 'not Obama' and this is 'not Benghazi.'",
+        "caption2": "A quote ostensibly uttered by Russian president Vladimir Putin criticizing President Obama is a fabricated one.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/putin-quote-criticizes-obama/"
+    },
+    "873.jpg": {
+        "caption1": "Mr Read, 55, took up the hobby for the first time a year ago",
+        "caption2": "Mike Read with his telescope",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/uk-england-wiltshire-55543775"
+    },
+    "875.jpg": {
+        "caption1": "In July 2017, Don Moen died of \"stomach pain\".",
+        "caption2": "Don Moen during the Canada Tour 2015 at the Prayer Palace, Toronto",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/don-moen-death-hoax/"
+    },
+    "881.jpg": {
+        "caption1": "A bird in the hand: \"I found this little wren in Kinlochewe after it had flown indoors by mistake and had tired itself out\"",
+        "caption2": "Wren in hand",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/uk-scotland-54753318"
+    },
+    "889.jpg": {
+        "caption1": "Hillary Clinton was accidentally killed during the filming of a documentary about her.",
+        "caption2": "Hillary Clinton hadn\u2019t been performing \u201cstunts\u201d for a documentary about her, much less been killed in the process. ",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/hillary-clinton-documentary-missouri/"
+    },
+    "892.jpg": {
+        "caption1": "In 2014, the Missouri state government issued \"nigger hunting\" licenses.",
+        "caption2": "The pictured license was not issued by the state of Missouri, nor did it provide the holder the legal right to hunt and kill African-Americans.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/missouri-licenses/"
+    },
+    "898.png": {
+        "caption1": "U.S. President Joe Biden signed an executive order giving China access to or control over the U.S. power grid system, causing the Texas power outage of February 2021.",
+        "caption2": "Biden didn\u2019t sign an executive order granting China access to or control over the U.S. power grid system.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/power-grid-executive-order/"
+    },
+    "905.jpg": {
+        "caption1": "Photographs show a damaged jet engine repaired with seatbelts during a refueling stop",
+        "caption2": "While the pictures do show an engine that has been removed from an aircraft, they do not document a case of substandard repairs",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/fan-belt/"
+    },
+    "908.jpg": {
+        "caption1": "Heavy snowfall in the UK. The Met Office issued yellow weather alerts for Saturday",
+        "caption2": "A man clears snow from his car in Auchterarder, Perth and Kinross",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/in-pictures-55674785"
+    },
+    "918.jpg": {
+        "caption1": "President Obama is set to replace the bald eagle with Bison as the U.S.'s national animal.",
+        "caption2": "National Bison Legacy Act is to adopt the North American bison as the national mammal of the United States. The legislation made no mention of changing or replacing the bald eagle's status.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/obama-bald-eagle-bison/"
+    },
+    "938.jpeg": {
+        "caption1": "A video shows \"CNN reporter\" Jade Sacker filming a pro-Trump mob storm the U.S. Capitol.",
+        "caption2": "Sacker appeared on CNN because she was a witness to the Capitol riot, not because she was employed by CNN",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/does-jade-sacker-work-for-cnn/"
+    },
+    "939.png": {
+        "caption1": "Paints face and hair like the Joker, goes to South Beach, climbs up on a car with an American flag, screams \u201cFucking COVID is over baby!\u201d and makes it rain",
+        "caption2": "Because the virus is not contained in any sense of that word, and because only 13% of Americans are fully vaccinated, the Joker\u2019s assertion that COVID is \u201cover\u201d is \u201cFalse.\u201d",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/covid-over-joker/"
+    },
+    "943.png": {
+        "caption1": "A photograph shows Donald Trump posing with his parents in Ku Klux Klan robes.",
+        "caption2": "This isn\u2019t even the first time that Ku Klux Klan robes have been digitally inserted into an image during the 2016 presidential election.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/donald-trumps-parents-kkk/"
+    },
+    "956.jpg": {
+        "caption1": "Donald Trump said that he planns to eradicate Section 8 housing, welfare, and Medicaid.",
+        "caption2": "Racially-charged reports that Donald Trump said that he wanted to get rid of specific social programs originated from a hoax news site.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/donald-trump-said-kiss-your-section-8-welfare-and-medicaid-goodbye/"
+    },
+    "959.jpg": {
+        "caption1": "Joe and Joshua appreciate a neighbour's rainbow in support of our NHS.",
+        "caption2": "rainbow children",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/uk-scotland-54616107"
+    },
+    "966.png": {
+        "caption1": "A white woman named Ricky Ellsworth was killed by a black police officer in Minneapolis, Minnesota",
+        "caption2": "A viral meme got key facts wrong while attempting to make a point about police violence and racial injustice in the U.S.",
+        "context_label": 1,
+        "article_url": "https://www.snopes.com/fact-check/ricky-ellsworth-black-cop/"
+    },
+    "995.jpg": {
+        "caption1": "Emma Billingham: \"Jumping on the baking bandwagon with the rest of the UK in lockdown. Eating the mixture is always the best part of the baking process.\"",
+        "caption2": "Woman in kitchen",
+        "context_label": 0,
+        "article_url": "https://www.bbc.com/news/in-pictures-52921327"
+    }
+}
