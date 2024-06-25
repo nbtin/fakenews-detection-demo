@@ -175,8 +175,6 @@ def run(input, config):
         if not os.path.isfile(check_list[0]):
             print("File does not exist")
             return
-        else:
-            print("File exists")
 
         # visualize_trufor_results(origin_list, check_list)
 
@@ -260,11 +258,11 @@ if __name__ == "__main__":
         os.makedirs("input_images")
     information()
     config = sidebar_config()
-    print(config)
+    # print(config)
     input = get_input(config)
-    print(input)
+    # print(input)
     not_implemented_warning = None
-    print(config.get_kind())
+    # print(config.get_kind())
     if input.is_valid(config.get_kind()):
         submitted = st.button("Submit", on_click=run, args=(input, config))
         if not Function(config.get_kind()).is_available():
