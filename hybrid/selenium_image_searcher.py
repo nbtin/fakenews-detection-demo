@@ -9,6 +9,7 @@ from bs4 import BeautifulSoup
 from matplotlib.dates import WE
 from matplotlib.pyplot import show
 from regex import B
+from requests import options
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
@@ -18,7 +19,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from urllib.parse import urljoin
 from selenium.webdriver.common.action_chains import ActionChains
 import pyperclip
-
+from selenium.webdriver.chrome.options import Options
 import data
 
 from tenacity import retry, stop_after_attempt, wait_random_exponential
@@ -27,8 +28,10 @@ from tenacity import retry, stop_after_attempt, wait_random_exponential
 def get_image_urls_from_bing(
     search_engine_url="https://www.bing.com/images/feed?form=HDRSC2",
 ):
+    options = webdriver.ChromeOptions()
+    options.add_argument('headless')
     # Configure WebDriver (replace with your path if needed)
-    driver = webdriver.Chrome(service=Service("/usr/bin/chromedriver"))
+    driver = webdriver.Chrome(service=Service("/usr/bin/chromedriver"), options=options)
     driver.get(search_engine_url)
 
     button = driver.find_element(By.ID, "sb_sbip")
@@ -90,9 +93,16 @@ def get_image_urls_from_bing(
     return image_links
 
 
-@retry(wait=wait_random_exponential(min=2, max=5), stop=stop_after_attempt(15))
+# @retry(wait=wait_random_exponential(min=2, max=5), stop=stop_after_attempt(15))
 def get_image_urls_from_google(image_path, search_engine_url="https://www.google.com/"):
     # Configure WebDriver (replace with your path if needed)
+    # options = webdriver.FirefoxOptions()
+    # options.add_argument("--headless")
+    # driver = webdriver.Firefox(service=Service("/usr/bin/geckodriver"))
+
+    # options = webdriver.ChromeOptions()
+    # options.add_argument("--headless")
+    # driver = webdriver.Chrome(service=Service("/usr/bin/chromedriver"), options=options)
     driver = webdriver.Chrome(service=Service("/usr/bin/chromedriver"))
     driver.get(search_engine_url)
 
@@ -107,6 +117,9 @@ def get_image_urls_from_google(image_path, search_engine_url="https://www.google
 
     # wait for page to load
     time.sleep(0.5)
+
+    if button:
+        print(button)
 
     # find field with both class and type
     upload_field = WebDriverWait(driver, 10).until(
@@ -123,6 +136,7 @@ def get_image_urls_from_google(image_path, search_engine_url="https://www.google
     driver.implicitly_wait(10)
 
     page_with_image_btn = driver.find_elements(By.CLASS_NAME, "ICt2Q")
+    # page_with_image_btn = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "ICt2Q")))
 
     if not page_with_image_btn:
         return []
@@ -181,7 +195,7 @@ if __name__ == "__main__":
 
     pyperclip.copy(image_path)
     # results = get_image_urls_from_bing()
-    results = get_image_urls_from_google()
+    results = get_image_urls_from_google(image_path=image_path)
 
     if results:
         print("Found image URLs:")

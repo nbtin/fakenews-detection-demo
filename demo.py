@@ -80,7 +80,7 @@ def sidebar_config():
     return Config(kind, roc_value, roc_service)
 
 
-def visualize_trufor_results(origin_list, check_list):
+def save_trufor_all_in_1(origin_list,  check_list):
     for i, file in enumerate(check_list):
         b = np.load(file)
         origin_image = Image.open(origin_list[i])
@@ -104,7 +104,7 @@ def visualize_trufor_results(origin_list, check_list):
         plt.savefig(f"results/{input.get_image_name().split('.')[0]}_trufor_result.png")
 
 
-def visualize_trufor_results_2(origin_list, check_list):
+def save_trufor_sep(origin_list, check_list):
     for i, file in enumerate(check_list):
         b = np.load(file)
         origin_image = Image.open(origin_list[i])
@@ -127,24 +127,6 @@ def visualize_trufor_results_2(origin_list, check_list):
             f"results/{input.get_image_name().split('.')[0]}_trufor_result.txt", "w"
         ) as f:
             f.write(f"{b['score']}")
-
-        # fig = plt.figure(figsize=(15, 5))
-
-        # ax1 = fig.add_subplot(1, 3, 1)
-        # ax1.imshow(origin_image)
-        # ax1.set_title("Original Image")
-
-        # ax2 = fig.add_subplot(1, 3, 2)
-        # ax2.imshow(b["map"])
-        # ax2.set_title("Localization Map")
-
-        # ax3 = fig.add_subplot(1, 3, 3)
-        # ax3.imshow(b["conf"], cmap="gray")
-        # ax3.set_title("Confidence Map")
-
-        # fig.suptitle(f"Score: {b['score']}", y=0.05)
-
-        # plt.savefig(f"results/{input.get_image_name().split('.')[0]}_trufor_result.png")
 
 
 def run(input, config):
@@ -176,14 +158,12 @@ def run(input, config):
             print("File does not exist")
             return
 
-        # visualize_trufor_results(origin_list, check_list)
-
-        visualize_trufor_results_2(origin_list, check_list)
+        save_trufor_all_in_1(origin_list, check_list)
     else:
         pass
 
 
-def show_results(input, kind):
+def show_results_all_in_1(input, kind):
     if kind == 1:
         st.header("Results")
         st.image(
@@ -191,63 +171,78 @@ def show_results(input, kind):
             use_column_width=True,
         )
 
+def result_trufor(input):
+    st.header("Results")
+    origin, loc_map, conf_map = st.columns(3)
 
-def show_results2(input, kind):
-    if kind == 1:
-        st.header("Results")
-        origin, loc_map, conf_map = st.columns(3)
-
-        with origin:
-            st.image(
-                f"input_images/{input.get_image_name()}",
-                caption="Original Image",
-                use_column_width=True,
-            )
-
-        with loc_map:
-            st.image(
-                f"results/{input.get_image_name().split('.')[0]}_loc_map.png",
-                caption="Localization Map",
-                use_column_width=True,
-            )
-
-        with conf_map:
-            st.image(
-                f"results/{input.get_image_name().split('.')[0]}_conf_map.png",
-                caption="Confidence Map",
-                use_column_width=True,
-            )
-
-        with open(
-            f"results/{input.get_image_name().split('.')[0]}_trufor_result.txt", "r"
-        ) as f:
-            score = f.read()
-
-        # Create a placeholder for the progress bar and text
-        progress_bar = st.empty()
-        progress_text = st.empty()
-
-        # Calculate the percentage for the progress bar
-        percentage = float(score)
-
-        # Update the progress bar with the current percentage
-        progress_bar.progress(
-            percentage, text=f"Integrity Score of Image: {float(score):.4f}"
+    with origin:
+        st.image(
+            f"input_images/{input.get_image_name()}",
+            caption="Original Image",
+            use_column_width=True,
         )
 
-        # Update the text under the progress bar to show min, current, and max values
-        progress_style = f"""
-        <div style="
-            display: flex;
-            justify-content: space-between;
-            align-items: center;">
-            <span>0 (Pristine)</span>
-            <span style="position: absolute; left: {percentage * 100}%; transform: translateX(-50%);"></span>
-            <span>1 (Manipulated)</span>
-        </div>
-        """
-        progress_text.markdown(progress_style, unsafe_allow_html=True)
-        st.balloons()
+    with loc_map:
+        st.image(
+            f"results/{input.get_image_name().split('.')[0]}_loc_map.png",
+            caption="Localization Map",
+            use_column_width=True,
+        )
+
+    with conf_map:
+        st.image(
+            f"results/{input.get_image_name().split('.')[0]}_conf_map.png",
+            caption="Confidence Map",
+            use_column_width=True,
+        )
+
+    with open(
+        f"results/{input.get_image_name().split('.')[0]}_trufor_result.txt", "r"
+    ) as f:
+        score = f.read()
+
+    # Create a placeholder for the progress bar and text
+    progress_bar = st.empty()
+    progress_text = st.empty()
+
+    # Calculate the percentage for the progress bar
+    percentage = float(score)
+
+    # Update the progress bar with the current percentage
+    progress_bar.progress(
+        percentage, text=f"Integrity Score of Image: {float(score):.4f}"
+    )
+
+    # Update the text under the progress bar to show min, current, and max values
+    progress_style = f"""
+    <div style="
+        display: flex;
+        justify-content: space-between;
+        align-items: center;">
+        <span>0 (Pristine)</span>
+        <span style="position: absolute; left: {percentage * 100}%; transform: translateX(-50%);"></span>
+        <span>1 (Manipulated)</span>
+    </div>
+    """
+    progress_text.markdown(progress_style, unsafe_allow_html=True)
+    st.balloons()
+
+def result_cheapfakes(input):
+    pass
+
+def result_hybrid(input):
+    pass
+
+def result_both(input):
+    pass
+
+def show_results_sep(input, kind):
+    if kind == 0:
+        result_cheapfakes(input)
+    elif kind == 1:
+        result_trufor(input)
+    else:
+        result_both(input)
 
 
 if __name__ == "__main__":
@@ -273,4 +268,4 @@ if __name__ == "__main__":
         if submitted and Function(config.get_kind()).is_available():
             if not_implemented_warning is not None:
                 not_implemented_warning.empty()
-            show_results2(input, config.get_kind())
+            show_results_sep(input, config.get_kind())
