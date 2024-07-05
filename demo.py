@@ -158,7 +158,8 @@ def run(input, config):
             print("File does not exist")
             return
 
-        save_trufor_all_in_1(origin_list, check_list)
+        # save_trufor_all_in_1(origin_list, check_list)
+        save_trufor_sep(origin_list, check_list)
     else:
         pass
 
@@ -177,27 +178,27 @@ def result_trufor(input):
 
     with origin:
         st.image(
-            f"input_images/{input.get_image_name()}",
+            f"/home/peter/Documents/repositories/fakenews-detection-demo/input_images/{input.get_image_name()}",
             caption="Original Image",
             use_column_width=True,
         )
 
     with loc_map:
         st.image(
-            f"results/{input.get_image_name().split('.')[0]}_loc_map.png",
+            f"/home/peter/Documents/repositories/fakenews-detection-demo/results/{input.get_image_name().split('.')[0]}_loc_map.png",
             caption="Localization Map",
             use_column_width=True,
         )
 
     with conf_map:
         st.image(
-            f"results/{input.get_image_name().split('.')[0]}_conf_map.png",
+            f"/home/peter/Documents/repositories/fakenews-detection-demo/results/{input.get_image_name().split('.')[0]}_conf_map.png",
             caption="Confidence Map",
             use_column_width=True,
         )
 
     with open(
-        f"results/{input.get_image_name().split('.')[0]}_trufor_result.txt", "r"
+        f"/home/peter/Documents/repositories/fakenews-detection-demo/results/{input.get_image_name().split('.')[0]}_trufor_result.txt", "r"
     ) as f:
         score = f.read()
 
@@ -240,7 +241,10 @@ def show_results_sep(input, kind):
     if kind == 0:
         result_cheapfakes(input)
     elif kind == 1:
-        result_trufor(input)
+        try:
+            result_trufor(input)
+        except Exception as e:
+            print("Out of Mem :))")
     else:
         result_both(input)
 
