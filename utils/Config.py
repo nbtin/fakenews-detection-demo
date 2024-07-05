@@ -15,3 +15,9 @@ class Config:
             return 1
         else:
             return 2
+
+    def get_roc_value(self):
+        return self.roc_value
+    
+    def get_roc_service(self):
+        return self.roc_service

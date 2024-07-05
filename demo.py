@@ -1,9 +1,9 @@
 import os
 from tabnanny import check
 import streamlit as st
-from Input import Input
-from Config import Config
-from Function import Function
+from utils.Input import Input
+from utils.Config import Config
+from utils.Function import Function, Context, Bing, Google
 import numpy as np
 import matplotlib.pyplot as plt
 from PIL import Image
@@ -67,16 +67,19 @@ def sidebar_config():
 
     # st.sidebar.write("You chose: ", kind)
     st.sidebar.write("#### Optional Features")
-    roc_value = st.sidebar.checkbox("Reputation Online Checking", value=False)
-    roc_info = st.sidebar.info(
-        ":bulb: For more information about Reputation Online Checking, please refer to our [paper](https://dl.acm.org/doi/10.1145/3652583.3657599)"
-    )
-    roc_service = None
-    if roc_value:
-        roc_info.empty()
-        roc_service = st.sidebar.radio("Choose a service", ("Bing", "Google"), index=0)
-        # st.sidebar.write("You chose: ", roc_service)
-
+    if kind != "Manipulated Images (TruFor)":
+        roc_value = st.sidebar.checkbox("Reputation Online Checking", value=False)
+        roc_info = st.sidebar.info(
+            ":bulb: For more information about Reputation Online Checking, please refer to our [paper](https://dl.acm.org/doi/10.1145/3652583.3657599)"
+        )
+        roc_service = None
+        if roc_value:
+            roc_info.empty()
+            roc_service = st.sidebar.radio("Choose a service", ("Bing", "Google"), index=0)
+            # st.sidebar.write("You chose: ", roc_service)
+    else:
+        roc_value = False
+        roc_service = None
     return Config(kind, roc_value, roc_service)
 
 
@@ -141,6 +144,7 @@ def run(input, config):
     input.get_image().save(
         os.path.join("input_images", input.get_image_name())
     )  # save image to images folder in pipeline folder
+
     if config.kind == "Manipulated Images (TruFor)":
         os.chdir("./trufor-clone/test_docker")
         os.system("bash docker_run.sh")
@@ -160,6 +164,16 @@ def run(input, config):
 
         # save_trufor_all_in_1(origin_list, check_list)
         save_trufor_sep(origin_list, check_list)
+    elif config.kind == "Cheapfakes (Ours)":
+        if config.get_roc_value():
+            if config.get_roc_service() == "Bing":
+                context = Context(Bing())
+            else:
+                context = Context(Google())
+            results = context.reputation_online_checking(input)
+            return results
+        else:
+            pass
     else:
         pass
 
@@ -228,25 +242,29 @@ def result_trufor(input):
     progress_text.markdown(progress_style, unsafe_allow_html=True)
     st.balloons()
 
-def result_cheapfakes(input):
+def result_cheapfakes(input, hybrid=False):
     pass
 
-def result_hybrid(input):
-    pass
 
 def result_both(input):
     pass
 
 def show_results_sep(input, kind):
     if kind == 0:
-        result_cheapfakes(input)
+        try:
+            result_cheapfakes(input)
+        except Exception as e:
+            print("Not implemented yet :))")
     elif kind == 1:
         try:
             result_trufor(input)
         except Exception as e:
             print("Out of Mem :))")
     else:
-        result_both(input)
+        try:
+            result_both(input)
+        except Exception as e:
+            print("Not implemented yet :))")
 
 
 if __name__ == "__main__":

@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 from matplotlib.dates import WE
 from matplotlib.pyplot import show
 from regex import B
-from requests import options
+from requests import head, options
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
@@ -20,18 +20,22 @@ from urllib.parse import urljoin
 from selenium.webdriver.common.action_chains import ActionChains
 import pyperclip
 from selenium.webdriver.chrome.options import Options
-import data
+# import data
 
 from tenacity import retry, stop_after_attempt, wait_random_exponential
 
 
 def get_image_urls_from_bing(
     search_engine_url="https://www.bing.com/images/feed?form=HDRSC2",
+    headless=True
 ):
-    options = webdriver.ChromeOptions()
-    options.add_argument('headless')
-    # Configure WebDriver (replace with your path if needed)
-    driver = webdriver.Chrome(service=Service("/usr/bin/chromedriver"), options=options)
+    if headless:
+        options = webdriver.ChromeOptions()
+        options.add_argument('headless')
+        # Configure WebDriver (replace with your path if needed)
+        driver = webdriver.Chrome(service=Service("/usr/bin/chromedriver"), options=options)
+    else:
+        driver = webdriver.Chrome(service=Service("/usr/bin/chromedriver"))
     driver.get(search_engine_url)
 
     button = driver.find_element(By.ID, "sb_sbip")
@@ -67,11 +71,11 @@ def get_image_urls_from_bing(
     ).perform()
 
     result_list = driver.find_element(By.CLASS_NAME, "pginlv")
-    print(result_list.get_attribute("innerHTML"))
+    # print(result_list.get_attribute("innerHTML"))
 
     # for loop through each li to get the each element from the list
     result_elements = result_list.find_elements(By.CSS_SELECTOR, "div.pginlv > ul > li")
-    print(len(result_elements))
+    # print(len(result_elements))
 
     # Wait for results and extract image URLs (up to 50)
     image_links = []
@@ -94,16 +98,17 @@ def get_image_urls_from_bing(
 
 
 # @retry(wait=wait_random_exponential(min=2, max=5), stop=stop_after_attempt(15))
-def get_image_urls_from_google(image_path, search_engine_url="https://www.google.com/"):
+def get_image_urls_from_google(search_engine_url="https://www.google.com/", headless=True):
     # Configure WebDriver (replace with your path if needed)
     # options = webdriver.FirefoxOptions()
     # options.add_argument("--headless")
     # driver = webdriver.Firefox(service=Service("/usr/bin/geckodriver"))
-
-    # options = webdriver.ChromeOptions()
-    # options.add_argument("--headless")
-    # driver = webdriver.Chrome(service=Service("/usr/bin/chromedriver"), options=options)
-    driver = webdriver.Chrome(service=Service("/usr/bin/chromedriver"))
+    if headless:
+        options = webdriver.ChromeOptions()
+        options.add_argument("--headless")
+        driver = webdriver.Chrome(service=Service("/usr/bin/chromedriver"), options=options)
+    else:
+        driver = webdriver.Chrome(service=Service("/usr/bin/chromedriver"))
     driver.get(search_engine_url)
 
     # find button by both classname and tag
@@ -118,8 +123,8 @@ def get_image_urls_from_google(image_path, search_engine_url="https://www.google
     # wait for page to load
     time.sleep(0.5)
 
-    if button:
-        print(button)
+    # if button:
+        # print(button)
 
     # find field with both class and type
     upload_field = WebDriverWait(driver, 10).until(
@@ -194,11 +199,11 @@ if __name__ == "__main__":
     image_path = "https://images.axios.com/5kpawBORcn8PseOV9KS3nNzL13g=/0x0:4000x2250/1920x1080/2024/04/08/1712575249252.jpg"
 
     pyperclip.copy(image_path)
-    # results = get_image_urls_from_bing()
-    results = get_image_urls_from_google(image_path=image_path)
+    # results = get_image_urls_from_bing(headless=False)
+    results = get_image_urls_from_google(headless=False)
 
     if results:
-        print("Found image URLs:")
+        print(f"Found {len(results)} image URLs:")
         for url in results:
             print(url)
     else:
