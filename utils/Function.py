@@ -1,9 +1,32 @@
 from __future__ import annotations
 from abc import ABC, abstractmethod
 from typing import List
+
+import pyperclip
 from hybrid.selenium_image_searcher import get_image_urls_from_bing as bing_search
 from hybrid.selenium_image_searcher import get_image_urls_from_google as google_search
-from hybrid.new_inference_batch_task1 import search_images, check_famous, FAMOUS_PAGES, CONTEXT
+# from hybrid.new_inference_batch_task1 import search_images, check_famous, FAMOUS_PAGES, CONTEXT
+
+FAMOUS_PAGES = [
+    "bbc.com",
+    "nytimes.com",
+    "arabnews.com",
+    "reuters.com",
+    "sabcnews.com",
+    "pbs.org",
+    "nbclosangeles.com",
+    "apnews.com",
+    "news.sky.com",
+    "telegraph.co.uk",
+    "time.com",
+    "denverpost.com",
+    "washingtonpost.com",
+    "cbc.ca",
+    "theguardian.com",
+    "pressherald.com",
+    "independent.co.uk",
+    "gazette.com",
+]
 
 from tqdm import tqdm
 import json
@@ -22,7 +45,7 @@ class Function:
 
     def is_available(self):
         if self.kind == 0:
-            return False
+            return True
         elif self.kind == 1:
             return True
         else:
@@ -70,7 +93,9 @@ class Context:
 
         print("Context: Performing image search...")
         print("Checking if the images are from famous pages...")
+        pyperclip.copy(input.get_image_url())
         results = self._strategy.search(headless=headless)
+        print(len(results))
         if results:
             print(f"Found {len(results)} image URLs:")
             for url in results:
@@ -79,6 +104,22 @@ class Context:
             print("No image URLs found.")
         return results
         # ...
+    def check_famous(self, input, results):
+        print("Checking if the images are from famous pages...")
+        clone_results = []
+        for result in results:
+            clone_results.append(result)
+
+        if input.is_have_article_url():
+            clone_results.append(input.get_article_url())
+
+        famous = []
+        for url in tqdm(clone_results):
+            for page in FAMOUS_PAGES:
+                if page in url:
+                    famous.append(url)
+                    break
+        return famous
 
 
 class Strategy(ABC):

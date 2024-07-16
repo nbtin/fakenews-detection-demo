@@ -1,0 +1,7 @@
+__pycache__/
+results/
+input_images/
+
+service_account.json
+
+TruFor_weights.zip

@@ -7,7 +7,14 @@ from utils.Function import Function, Context, Bing, Google
 import numpy as np
 import matplotlib.pyplot as plt
 from PIL import Image
+from firebase_admin import credentials, initialize_app, storage
+import pyperclip
+import firebase_admin
 
+# Init firebase with your credentials
+if not firebase_admin._apps:
+    cred = credentials.Certificate("service_account.json")
+    initialize_app(cred, {"storageBucket": "fakenews-4048f.appspot.com"})
 
 IMAGE_FOLDER = "trufor-clone/test_docker/images"
 ORIGINAL_PATH = "/home/peter/Documents/repositories/fakenews-detection-demo/"
@@ -25,7 +32,7 @@ def information():
     )
 
     st.info(
-        ":bulb: This fake news detection demo refers to the following works:\n\n - Cheapfakes Detection: [A Unified Network for Detecting Out-Of-Context Information Using Generative Synthetic Data](https://dl.acm.org/doi/10.1145/3652583.3657599) (ours)\n\n - Deepfakes Detection: [TruFor: Leveraging all-round clues for trustworthy image forgery detection and localization](https://grip-unina.github.io/TruFor/)"
+        ":bulb: This fake news detection demo refers to the following works:\n\n - Cheapfakes Detection: \n\n\t - [A Unified Network for Detecting Out-Of-Context Information Using Generative Synthetic Data](https://dl.acm.org/doi/10.1145/3652583.3657599) (ours) - ICMR 2024\n\n\t - [A Hybrid Approach for Cheapfake Detection Using Reputation Checking and End-To-End Network](https://dl.acm.org/doi/10.1145/3660512.3665521) (ours) - SCID 2024\n\n - Deepfakes Detection: [TruFor: Leveraging all-round clues for trustworthy image forgery detection and localization](https://grip-unina.github.io/TruFor/)"
     )
 
 
@@ -75,7 +82,9 @@ def sidebar_config():
         roc_service = None
         if roc_value:
             roc_info.empty()
-            roc_service = st.sidebar.radio("Choose a service", ("Bing", "Google"), index=0)
+            roc_service = st.sidebar.radio(
+                "Choose a service", ("Google", "Bing"), index=0
+            )
             # st.sidebar.write("You chose: ", roc_service)
     else:
         roc_value = False
@@ -83,7 +92,7 @@ def sidebar_config():
     return Config(kind, roc_value, roc_service)
 
 
-def save_trufor_all_in_1(origin_list,  check_list):
+def save_trufor_all_in_1(origin_list, check_list):
     for i, file in enumerate(check_list):
         b = np.load(file)
         origin_image = Image.open(origin_list[i])
@@ -145,6 +154,17 @@ def run(input, config):
         os.path.join("input_images", input.get_image_name())
     )  # save image to images folder in pipeline folder
 
+    # Put your local file path
+    fileName = os.path.join("input_images", input.get_image_name())
+    bucket = storage.bucket()
+    blob = bucket.blob(fileName)
+    blob.upload_from_filename(fileName)
+
+    # Opt : if you want to make public access from the URL
+    blob.make_public()
+
+    input.update_image_url(blob.public_url)
+
     if config.kind == "Manipulated Images (TruFor)":
         os.chdir("./trufor-clone/test_docker")
         os.system("bash docker_run.sh")
@@ -166,12 +186,20 @@ def run(input, config):
         save_trufor_sep(origin_list, check_list)
     elif config.kind == "Cheapfakes (Ours)":
         if config.get_roc_value():
+            print(f"input: {input}")
+            print(f"image url: {input.get_image_url()}")
+            # pyperclip.copy(input.get_image_url())
             if config.get_roc_service() == "Bing":
                 context = Context(Bing())
             else:
                 context = Context(Google())
-            results = context.reputation_online_checking(input)
-            return results
+            results = context.reputation_online_checking(input, headless=True)
+            famous = context.check_famous(input, results)
+            # write each famous element into a text file
+            with open(
+                f"results/{input.get_image_name().split('.')[0]}_roc.txt", "w"
+            ) as f:
+                f.write('\n'.join(famous))
         else:
             pass
     else:
@@ -185,6 +213,7 @@ def show_results_all_in_1(input, kind):
             f"results/{input.get_image_name().split('.')[0]}_trufor_result.png",
             use_column_width=True,
         )
+
 
 def result_trufor(input):
     st.header("Results")
@@ -212,7 +241,8 @@ def result_trufor(input):
         )
 
     with open(
-        f"/home/peter/Documents/repositories/fakenews-detection-demo/results/{input.get_image_name().split('.')[0]}_trufor_result.txt", "r"
+        f"/home/peter/Documents/repositories/fakenews-detection-demo/results/{input.get_image_name().split('.')[0]}_trufor_result.txt",
+        "r",
     ) as f:
         score = f.read()
 
@@ -242,17 +272,43 @@ def result_trufor(input):
     progress_text.markdown(progress_style, unsafe_allow_html=True)
     st.balloons()
 
+
+def result_roc(input):
+    print("hehe")
+    st.html("<h2 style='text-align: center;'>Reputation Online Checking Result</h2>")
+    with open(f"results/{input.get_image_name().split('.')[0]}_roc.txt", "r") as f:
+        famous = f.readlines()
+    famous_size = len(famous)
+    if famous_size == 0:
+        print("Cannot find the image from prestigious sources")
+        st.warning("Cannot find the image from prestigious sources")
+    else:
+        print(f"We found {famous_size} sources with the provided image: {famous}")
+        if famous_size == 1:
+            st.html(f"<h4>We found {famous_size} prestigious source with the provided image</h4>")
+        else:
+            st.html(f"<h4>We found {famous_size} prestigious sources with the provided image</h4>")
+        for i, source in enumerate(famous):
+            st.write(f"{i + 1}. {source}")
+
+
+
 def result_cheapfakes(input, hybrid=False):
-    pass
+    if hybrid:
+        result_roc(input)
+    else:
+        st.warning("Not implemented yet :))")
 
 
 def result_both(input):
     pass
 
-def show_results_sep(input, kind):
+
+def show_results_sep(input, kind, roc_value, roc_service):
     if kind == 0:
         try:
-            result_cheapfakes(input)
+            print("haha")
+            result_cheapfakes(input, hybrid=roc_value)
         except Exception as e:
             print("Not implemented yet :))")
     elif kind == 1:
@@ -290,4 +346,9 @@ if __name__ == "__main__":
         if submitted and Function(config.get_kind()).is_available():
             if not_implemented_warning is not None:
                 not_implemented_warning.empty()
-            show_results_sep(input, config.get_kind())
+            show_results_sep(
+                input,
+                config.get_kind(),
+                config.get_roc_value(),
+                config.get_roc_service(),
+            )

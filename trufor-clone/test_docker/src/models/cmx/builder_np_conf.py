@@ -26,6 +26,14 @@ def create_backbone(typ, norm_layer):
         logging.info('Using backbone: Segformer-B2')
         from .encoders.dual_segformer import mit_b2 as backbone_
         backbone = backbone_(norm_fuse=norm_layer)
+    elif typ == 'mit_b1':
+        logging.info('Using backbone: Segformer-B1')
+        from .encoders.dual_segformer import mit_b1 as backbone_
+        backbone = backbone_(norm_fuse=norm_layer)
+    elif typ == 'mit_b0':
+        logging.info('Using backbone: Segformer-B0')
+        from .encoders.dual_segformer import mit_b0 as backbone_
+        backbone = backbone_(norm_fuse=norm_layer)
     else:
         raise NotImplementedError('backbone not implemented')
     return backbone, channels
