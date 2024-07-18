@@ -1,6 +1,7 @@
 __pycache__/
 results/
 input_images/
+cheapfakes_detection_SCID2024/
 
 service_account.json
 

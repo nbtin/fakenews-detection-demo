@@ -10,7 +10,7 @@ MODEL:
   NAME: detconfcmx
   MODS: ('RGB','NP++')
   EXTRA:
-      BACKBONE: mit_b0
+      BACKBONE: mit_b2
       DECODER: MLPDecoder
       DECODER_EMBED_DIM: 512
       PREPRC: 'imagenet'

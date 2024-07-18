@@ -21,7 +21,6 @@ from urllib.parse import urljoin
 from selenium.webdriver.common.action_chains import ActionChains
 import pyperclip
 from selenium.webdriver.chrome.options import Options
-import undetected_chromedriver as uc
 
 # import data
 
