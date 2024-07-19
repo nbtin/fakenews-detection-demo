@@ -1,10 +1,13 @@
 from argparse import Action
+import copy
 from distutils.command import upload
 from email.mime import image
 import json
 import os
 import re
 import time
+
+from click import option
 from altair import Key
 from bs4 import BeautifulSoup
 from matplotlib.dates import WE
@@ -21,6 +24,12 @@ from urllib.parse import urljoin
 from selenium.webdriver.common.action_chains import ActionChains
 import pyperclip
 from selenium.webdriver.chrome.options import Options
+from webdriver_manager.chrome import ChromeDriverManager
+
+from hybrid.file_clipboard import *
+
+# This will set the clipboard to use the file-based method
+clipboard = CustomClipboard()
 
 # import data
 
@@ -31,18 +40,25 @@ def get_image_urls_from_bing(
     search_engine_url="https://www.bing.com/images/feed", headless=True
 ):
     if headless:
-        options = webdriver.ChromeOptions()
-        options.add_argument("headless")
-        options.add_argument("window-size=1920x1080")
-        options.add_argument("disable-gpu")
-        # options.add_argument('no-sandbox')
-        # options.add_argument('disable-dev-shm-usage')
-        options.add_argument(
-            "user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-        )
-        driver = webdriver.Chrome(
-            service=Service("/usr/bin/chromedriver"), options=options
-        )
+        # options = webdriver.ChromeOptions()
+        # options.add_argument("headless")
+        # options.add_argument("window-size=1920x1080")
+        # options.add_argument("disable-gpu")
+        # # options.add_argument('no-sandbox')
+        # # options.add_argument('disable-dev-shm-usage')
+        # options.add_argument(
+        #     "user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+        # )
+        # driver = webdriver.Chrome(
+        #     service=Service("/usr/bin/chromedriver"), options=options
+        # )
+
+        options = Options()
+        options.add_argument('--headless')
+        options.add_argument("--window-size=1920,1080")
+        options.add_argument('--no-sandbox')
+        options.add_argument('--disable-dev-shm-usage')
+        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
     else:
         driver = webdriver.Chrome(service=Service("/usr/bin/chromedriver"))
     driver.get(search_engine_url)
@@ -55,18 +71,21 @@ def get_image_urls_from_bing(
     )
 
     if headless:
-        copy_content = pyperclip.paste()
+        # copy_content = pyperclip.paste()
+        copy_content = clipboard.paste()
         print(copy_content)
 
         ActionChains(driver).move_to_element(button).click(button).perform()
 
-        driver.save_screenshot("screenshot_clickbtn.png")
+        # driver.save_screenshot("screenshot_clickbtn.png")
 
-        ActionChains(driver).move_to_element(upload_field).click(upload_field).send_keys(
-            copy_content
-        ).send_keys(".").send_keys(Keys.BACKSPACE).send_keys(Keys.ENTER).perform()
+        ActionChains(driver).move_to_element(upload_field).click(
+            upload_field
+        ).send_keys(copy_content).send_keys(".").send_keys(Keys.BACKSPACE).send_keys(
+            Keys.ENTER
+        ).perform()
 
-        driver.save_screenshot("screenshot_upload.png")
+        # driver.save_screenshot("screenshot_upload.png")
     else:
         ActionChains(driver).move_to_element(upload_field).click(upload_field).key_down(
             Keys.CONTROL
@@ -126,18 +145,24 @@ def get_image_urls_from_google(
     # options.add_argument("--headless")
     # driver = webdriver.Firefox(service=Service("/usr/bin/geckodriver"))
     if headless:
-        options = webdriver.ChromeOptions()
-        options.add_argument("headless")
-        options.add_argument("window-size=1920x1080")
-        options.add_argument("disable-gpu")
-        # options.add_argument('no-sandbox')
-        # options.add_argument('disable-dev-shm-usage')
-        options.add_argument(
-            "user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
-        )
-        driver = webdriver.Chrome(
-            service=Service("/usr/bin/chromedriver"), options=options
-        )
+        # options = webdriver.ChromeOptions()
+        # options.add_argument("headless")
+        # options.add_argument("window-size=1920x1080")
+        # options.add_argument("disable-gpu")
+        # # options.add_argument('no-sandbox')
+        # # options.add_argument('disable-dev-shm-usage')
+        # options.add_argument(
+        #     "user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+        # )
+        # driver = webdriver.Chrome(
+        #     service=Service("/usr/bin/chromedriver"), options=options
+        # )
+        options = Options()
+        options.add_argument('--headless')
+        options.add_argument("--window-size=1920,1080")
+        options.add_argument('--no-sandbox')
+        options.add_argument('--disable-dev-shm-usage')
+        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
     else:
         driver = webdriver.Chrome(service=Service("/usr/bin/chromedriver"))
     driver.get(search_engine_url)
@@ -164,7 +189,8 @@ def get_image_urls_from_google(
     )
 
     if headless:
-        copy_content = pyperclip.paste()
+        # copy_content = pyperclip.paste()
+        copy_content = clipboard.paste()
         print(copy_content)
 
         # Move to the upload_field element and click it
@@ -180,12 +206,12 @@ def get_image_urls_from_google(
 
     # implicitly wait for page
     driver.implicitly_wait(10)
-    driver.save_screenshot("screenshot_gg.png")
+    # driver.save_screenshot("screenshot_gg.png")
 
     page_with_image_btn = driver.find_elements(By.CLASS_NAME, "ICt2Q")
     # page_with_image_btn = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "ICt2Q")))
 
-    driver.save_screenshot("screenshot2_gg.png")
+    # driver.save_screenshot("screenshot2_gg.png")
     if not page_with_image_btn:
         return []
 
@@ -240,9 +266,10 @@ def get_image_urls_from_google(
 if __name__ == "__main__":
     # Example usage
     # image_path = "https://images.axios.com/5kpawBORcn8PseOV9KS3nNzL13g=/0x0:4000x2250/1920x1080/2024/04/08/1712575249252.jpg"
-    image_path = "https://storage.googleapis.com/fakenews-4048f.appspot.com/input_images/Antony_Starr.jpg"
+    image_path = "https://storage.googleapis.com/fakenews-4048f.appspot.com/input_images/159215939.jpg"
 
-    pyperclip.copy(image_path)
+    # pyperclip.copy(image_path)
+    clipboard.copy(image_path)
     # results = get_image_urls_from_bing(headless=True)
     results = get_image_urls_from_google(headless=True)
 

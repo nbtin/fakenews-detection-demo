@@ -162,6 +162,14 @@ def main(cfg: DictConfig, **kwargs):
         else:
             answer = 'no'
 
+        # write answer to a file
+        if not os.path.exists("/thesis-demo/results/cheapfakes"):
+            os.makedirs("/thesis-demo/results/cheapfakes")
+        fl = open("/thesis-demo/results/cheapfakes/answer.txt", 'w')
+        fl.write(f"{answer}")
+        fl.close()
+        return
+
         predict_context_task.append(CONTEXT[answer])
         gt_context_task.append(data_point['context_label'])
 

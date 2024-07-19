@@ -1,5 +1,9 @@
+import json
 import os
+import re
 from tabnanny import check
+
+from sympy import use
 import streamlit as st
 from utils.Input import Input
 from utils.Config import Config
@@ -18,30 +22,37 @@ if not firebase_admin._apps:
 
 IMAGE_FOLDER = "/thesis-demo/trufor-clone/test_docker/images"
 ORIGINAL_PATH = "/thesis-demo/"
+CHEAPFAKES_INPUT_FOLDER = "/thesis-demo/input_images/data"
 
 
 def information():
     st.set_page_config(
-        page_title="Fake News Detection Demo",
+        page_title="Thesis Demo on Fake News Analysis & Detection",
         page_icon=":newspaper:",
         layout="wide",
     )
-    st.html("<h1 style='text-align: center;'>Fake News Detection Demo</h1>")
     st.html(
-        "<center><p style='font-weight: bold;'>Student 1: Nguyen Van Loc (20120131) <br> Student 2: Nguyen Bao Tin (20120596)</p></center>"
+        "<h1 style='text-align: center;'>Thesis Demo on Fake News Analysis & Detection<br>Honors Program 2020</h1>"
     )
-
-    st.info(
-        ":bulb: This fake news detection demo refers to the following works:\n\n - Cheapfakes Detection: \n\n\t - [A Unified Network for Detecting Out-Of-Context Information Using Generative Synthetic Data](https://dl.acm.org/doi/10.1145/3652583.3657599) (ours) - ICMR 2024\n\n\t - [A Hybrid Approach for Cheapfake Detection Using Reputation Checking and End-To-End Network](https://dl.acm.org/doi/10.1145/3660512.3665521) (ours) - SCID 2024\n\n - Deepfakes Detection: [TruFor: Leveraging all-round clues for trustworthy image forgery detection and localization](https://grip-unina.github.io/TruFor/)"
+    st.html(
+        "<center><h5 style='font-weight: bold;'>Student 1: Nguyen Van Loc (20120131) <br> Student 2: Nguyen Bao Tin (20120596)</h5></center>"
     )
+    with st.expander("Detail of our works"):
+        st.info(
+            ":bulb: This fake news detection demo refers to the following works:\n\n - Cheapfakes Detection: \n\n\t - [A Unified Network for Detecting Out-Of-Context Information Using Generative Synthetic Data](https://dl.acm.org/doi/10.1145/3652583.3657599) (ours) - ICMR 2024\n\n\t - [A Hybrid Approach for Cheapfake Detection Using Reputation Checking and End-To-End Network](https://dl.acm.org/doi/10.1145/3660512.3665521) (ours) - SCID 2024\n\n - Deepfakes Detection: [TruFor: Leveraging all-round clues for trustworthy image forgery detection and localization](https://grip-unina.github.io/TruFor/)"
+        )
 
 
 def get_input(config):
-    image = st.file_uploader("Upload an image", type=["png", "jpg", "jpeg"])
-    # if image is not None:
-    #     l_col, c_col, r_col = st.columns(3)
-    #     with c_col:
-    #         st.image(image, width=200, clamp=True)
+    l_col, c1_col, c2_col, r_col = st.columns([0.8, 0.02, 0.16, 0.02])
+    with l_col:
+        image = st.file_uploader("Upload an image", type=["png", "jpg", "jpeg"])
+    with c2_col:
+        placeholder = st.image(Image.open("/thesis-demo/placeholder.png"), use_column_width=True)
+    if image is not None:
+        placeholder.empty()
+        with c2_col:
+            placeholder = st.image(image, use_column_width=True)
     if config.get_kind() == 1:
         caption1 = st.text_input(
             "Caption 1 (optional): ", placeholder="Enter caption here"
@@ -75,7 +86,7 @@ def sidebar_config():
     # st.sidebar.write("You chose: ", kind)
     st.sidebar.write("#### Optional Features")
     if kind != "Manipulated Images (TruFor)":
-        roc_value = st.sidebar.checkbox("Reputation Online Checking", value=False)
+        roc_value = st.sidebar.checkbox("Reputation Online Checking (ROC)", value=False)
         roc_info = st.sidebar.info(
             ":bulb: For more information about Reputation Online Checking, please refer to our [paper](https://dl.acm.org/doi/10.1145/3652583.3657599)"
         )
@@ -113,7 +124,9 @@ def save_trufor_all_in_1(origin_list, check_list):
 
         fig.suptitle(f"Score: {b['score']}", y=0.05)
 
-        plt.savefig(f"/thesis-demo/results/{input.get_image_name().split('.')[0]}_trufor_result.png")
+        plt.savefig(
+            f"/thesis-demo/results/{input.get_image_name().split('.')[0]}_trufor_result.png"
+        )
 
 
 def save_trufor_sep(origin_list, check_list):
@@ -124,7 +137,8 @@ def save_trufor_sep(origin_list, check_list):
         loc_map = b["map"]
         # save the localization map to image
         plt.imsave(
-            f"/thesis-demo/results/{input.get_image_name().split('.')[0]}_loc_map.png", loc_map
+            f"/thesis-demo/results/{input.get_image_name().split('.')[0]}_loc_map.png",
+            loc_map,
         )
 
         conf_map = b["conf"]
@@ -136,10 +150,52 @@ def save_trufor_sep(origin_list, check_list):
         )
 
         with open(
-            f"/thesis-demo/results/{input.get_image_name().split('.')[0]}_trufor_result.txt", "w"
+            f"/thesis-demo/results/{input.get_image_name().split('.')[0]}_trufor_result.txt",
+            "w",
         ) as f:
             f.write(f"{b['score']}")
 
+def run_trufor(input):
+    os.chdir(ORIGINAL_PATH + "trufor-clone/test_docker/src")
+    # os.system("bash docker_run.sh")
+    os.system("python trufor_test.py")
+    origin_list = [
+        "/thesis-demo/trufor-clone/test_docker/images/" + input.get_image_name(),
+    ]
+
+    check_list = [
+        "/thesis-demo/trufor-clone/test_docker/output/"
+        + input.get_image_name()
+        + ".npz",
+    ]
+
+    # check if file exists
+    if not os.path.isfile(check_list[0]):
+        print("File does not exist")
+        return
+
+    # save_trufor_all_in_1(origin_list, check_list)
+    save_trufor_sep(origin_list, check_list)
+
+def run_cheapfakes(input, config):
+    if config.get_roc_value():
+        print(f"input: {input}")
+        print(f"image url: {input.get_image_url()}")
+        # pyperclip.copy(input.get_image_url())
+        if config.get_roc_service() == "Bing":
+            context = Context(Bing())
+        else:
+            context = Context(Google())
+        results = context.reputation_online_checking(input, headless=True)
+        famous = context.check_famous(input, results)
+        # write each famous element into a text file
+        with open(
+            f"/thesis-demo/results/{input.get_image_name().split('.')[0]}_roc.txt",
+            "w",
+        ) as f:
+            f.write("\n".join(famous))
+    else:
+        pass
 
 def run(input, config):
     # get current directory
@@ -166,44 +222,51 @@ def run(input, config):
     input.update_image_url(blob.public_url)
 
     if config.kind == "Manipulated Images (TruFor)":
-        # os.chdir("./trufor-clone/test_docker")
-        os.chdir(ORIGINAL_PATH)
-        os.system("bash docker_run.sh")
-        origin_list = [
-            "./trufor-clone/test_docker/images/" + input.get_image_name(),
-        ]
+        # # os.chdir("./trufor-clone/test_docker")
+        # os.chdir(ORIGINAL_PATH + "trufor-clone/test_docker/src")
+        # # os.system("bash docker_run.sh")
+        # os.system("python trufor_test.py")
+        # origin_list = [
+        #     "/thesis-demo/trufor-clone/test_docker/images/" + input.get_image_name(),
+        # ]
 
-        check_list = [
-            "./trufor-clone/test_docker/output/" + input.get_image_name() + ".npz",
-        ]
+        # check_list = [
+        #     "/thesis-demo/trufor-clone/test_docker/output/"
+        #     + input.get_image_name()
+        #     + ".npz",
+        # ]
 
-        # check if file exists
-        if not os.path.isfile(check_list[0]):
-            print("File does not exist")
-            return
+        # # check if file exists
+        # if not os.path.isfile(check_list[0]):
+        #     print("File does not exist")
+        #     return
 
-        # save_trufor_all_in_1(origin_list, check_list)
-        save_trufor_sep(origin_list, check_list)
+        # # save_trufor_all_in_1(origin_list, check_list)
+        # save_trufor_sep(origin_list, check_list)
+        run_trufor(input)
     elif config.kind == "Cheapfakes (Ours)":
-        if config.get_roc_value():
-            print(f"input: {input}")
-            print(f"image url: {input.get_image_url()}")
-            # pyperclip.copy(input.get_image_url())
-            if config.get_roc_service() == "Bing":
-                context = Context(Bing())
-            else:
-                context = Context(Google())
-            results = context.reputation_online_checking(input, headless=True)
-            famous = context.check_famous(input, results)
-            # write each famous element into a text file
-            with open(
-                f"/thesis-demo/results/{input.get_image_name().split('.')[0]}_roc.txt", "w"
-            ) as f:
-                f.write('\n'.join(famous))
-        else:
-            pass
+        # if config.get_roc_value():
+        #     print(f"input: {input}")
+        #     print(f"image url: {input.get_image_url()}")
+        #     # pyperclip.copy(input.get_image_url())
+        #     if config.get_roc_service() == "Bing":
+        #         context = Context(Bing())
+        #     else:
+        #         context = Context(Google())
+        #     results = context.reputation_online_checking(input, headless=True)
+        #     famous = context.check_famous(input, results)
+        #     # write each famous element into a text file
+        #     with open(
+        #         f"/thesis-demo/results/{input.get_image_name().split('.')[0]}_roc.txt",
+        #         "w",
+        #     ) as f:
+        #         f.write("\n".join(famous))
+        # else:
+        #     pass
+        run_cheapfakes(input, config)
     else:
-        pass
+        run_trufor(input)
+        run_cheapfakes(input, config)
 
 
 def show_results_all_in_1(input, kind):
@@ -216,7 +279,7 @@ def show_results_all_in_1(input, kind):
 
 
 def result_trufor(input):
-    st.header("Results")
+    st.html("<h2 style='text-align: center;'>Manipulated Image Checking Results</h2>")
     origin, loc_map, conf_map = st.columns(3)
 
     with origin:
@@ -272,11 +335,14 @@ def result_trufor(input):
     progress_text.markdown(progress_style, unsafe_allow_html=True)
     st.balloons()
 
+    os.chdir(ORIGINAL_PATH)
+
 
 def result_roc(input):
-    print("hehe")
-    st.html("<h2 style='text-align: center;'>Reputation Online Checking Result</h2>")
-    with open(f"/thesis-demo/results/{input.get_image_name().split('.')[0]}_roc.txt", "r") as f:
+    st.html("<h2 style='text-align: center;'>ROC Result</h2>")
+    with open(
+        f"/thesis-demo/results/{input.get_image_name().split('.')[0]}_roc.txt", "r"
+    ) as f:
         famous = f.readlines()
     famous_size = len(famous)
     if famous_size == 0:
@@ -285,42 +351,161 @@ def result_roc(input):
     else:
         print(f"We found {famous_size} sources with the provided image: {famous}")
         if famous_size == 1:
-            st.html(f"<h4>We found {famous_size} prestigious source with the provided image</h4>")
+            st.html(
+                f"<h4>We found {famous_size} prestigious source with the provided image</h4>"
+            )
         else:
-            st.html(f"<h4>We found {famous_size} prestigious sources with the provided image</h4>")
+            st.html(
+                f"<h4>We found {famous_size} prestigious sources with the provided image</h4>"
+            )
         for i, source in enumerate(famous):
             st.write(f"{i + 1}. {source}")
-
-
+    os.chdir(ORIGINAL_PATH)
 
 def result_cheapfakes(input, hybrid=False):
-    if hybrid:
-        result_roc(input)
+    # if hybrid:
+    #     result_roc(input)
+
+    # st.warning("Not implemented yet :))")
+    # check if cheapfakes input folder exist
+    if not os.path.exists(CHEAPFAKES_INPUT_FOLDER):
+        os.makedirs(CHEAPFAKES_INPUT_FOLDER)
+
+    if not os.path.exists(CHEAPFAKES_INPUT_FOLDER + "/test/"):
+        os.makedirs(CHEAPFAKES_INPUT_FOLDER + "/test/")
+
+    # save input into folder for running cheapfakes detection
+    # create a json file to store metadata of input
+    with open(f"{CHEAPFAKES_INPUT_FOLDER}/test.json", "w") as f:
+        input_data = {
+            "img_local_path": f"test/{input.get_image_name()}",
+            "caption1": input.get_caption1(),
+            "caption2": input.get_caption2(),
+            "context_label": "1",
+            "article_url": (
+                input.get_article_url() if input.is_have_article_url() else ""
+            ),
+        }
+        # write the input_data into json file in json format
+        json.dump(input_data, f)
+
+    # save the image to the folder
+    input.get_image().save(f"{CHEAPFAKES_INPUT_FOLDER}/test/{input.get_image_name()}")
+
+    # run cheapfakes detection
+    # export environment variable
+    os.environ["INPUT_FOLDER"] = CHEAPFAKES_INPUT_FOLDER
+    os.environ["DATA"] = CHEAPFAKES_INPUT_FOLDER + "/test.json"
+
+    import subprocess
+
+    # Change directory
+    print("im here")
+    # os.chdir(ORIGINAL_PATH + "cheapfakes_detection_SCID2024/run_scripts/snli_ve")
+    os.chdir(ORIGINAL_PATH + "hybrid/run_scripts/snli_ve")
+
+    # Set environment variables
+    os.environ["MASTER_PORT"] = "7091"
+    os.environ["PYTHONPATH"] = os.environ.get("PYTHONPATH", "") + ":../../flops/"
+    os.environ["user_dir"] = "../../ofa_module"
+    os.environ["bpe_dir"] = "../../utils/BPE"
+    os.environ["split"] = "test"
+    # os.environ["checkpoint_path"] = (
+    #     ORIGINAL_PATH
+    #     + "cheapfakes_detection_SCID2024/checkpoint.best_snli_score_0.8290.pt"
+    # )
+    os.environ["checkpoint_path"] = (
+        ORIGINAL_PATH
+        + "hybrid/checkpoint.best_snli_score_0.9090.pt"
+    )
+    os.environ["result_path"] = "../../results/snli_ve"
+    os.environ["selected_cols"] = "0,2,3,4,5"
+
+    # Execute the command
+    command = """
+    CUDA_VISIBLE_DEVICE=0 python ../../inference_batch_task1.py ${DATA} \
+        --path=${checkpoint_path} \
+        --user-dir=${user_dir} \
+        --task=snli_ve \
+        --batch-size=2 \
+        --log-format=simple --log-interval=10 \
+        --seed=7 \
+        --gen-subset=${split} \
+        --results-path=${result_path} \
+        --fp16 \
+        --num-workers=0 \
+        --model-overrides="{'data':'${data}','bpe_dir':'${bpe_dir}','selected_cols':'${selected_cols}'}"
+    """.strip()
+
+    # Replace environment variables in the command with their actual values
+    for key, value in os.environ.items():
+        command = command.replace("${" + key + "}", value)
+
+    # Execute the command
+    process = subprocess.Popen(
+        command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE
+    )
+    stdout, stderr = process.communicate()
+
+    # Optionally, print the output and error streams
+    print(stdout.decode())
+    if stderr:
+        print(stderr.decode())
+
+    # get the result in the file
+    result_file = f"{ORIGINAL_PATH}/results/cheapfakes/answer.txt"
+    with open(result_file, "r") as f:
+        result = f.read()
+
+    print(result)
+
+    # display the result
+    st.html("<h2 style='text-align: center;'>Cheapfakes Detection Results</h2>")
+    if result == "yes":
+        st.info("Not found any out-of-context (OOC) information in the image and captions.")
     else:
-        st.warning("Not implemented yet :))")
+        st.warning("Found out-of-context (OOC) information in the image and captions!")
+    
+    os.chdir(ORIGINAL_PATH)
 
 
-def result_both(input):
-    pass
+def result_both(input, roc_value):
+    if roc_value:
+        l_col, r_col = st.columns([0.5, 0.5])
+        with l_col:
+            result_cheapfakes(input, hybrid=roc_value)
+        with r_col:
+            result_roc(input)
+    else:
+        result_cheapfakes(input)
+    
+    result_trufor(input)
+        
 
 
 def show_results_sep(input, kind, roc_value, roc_service):
     if kind == 0:
         try:
-            print("haha")
-            result_cheapfakes(input, hybrid=roc_value)
+            if roc_value:
+                l_col, r_col = st.columns([0.5, 0.5])
+                with l_col:
+                    result_cheapfakes(input, hybrid=roc_value)
+                with r_col:
+                    result_roc(input)
+            else:
+                result_cheapfakes(input)
         except Exception as e:
-            print("Not implemented yet :))")
+            print("Cheapfakes: something went wrong :))")
     elif kind == 1:
         try:
             result_trufor(input)
         except Exception as e:
-            print("Out of Mem :))")
+            print("TruFor: something went wrong :))")
     else:
         try:
-            result_both(input)
+            result_both(input, roc_value)
         except Exception as e:
-            print("Not implemented yet :))")
+            print("Both: something went wrong :))")
 
 
 if __name__ == "__main__":

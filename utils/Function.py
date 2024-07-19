@@ -2,10 +2,17 @@ from __future__ import annotations
 from abc import ABC, abstractmethod
 from typing import List
 
+from numpy import clip
+
 import pyperclip
 from hybrid.selenium_image_searcher import get_image_urls_from_bing as bing_search
 from hybrid.selenium_image_searcher import get_image_urls_from_google as google_search
 # from hybrid.new_inference_batch_task1 import search_images, check_famous, FAMOUS_PAGES, CONTEXT
+
+from utils.file_clipboard import *
+
+# This will set the clipboard to use the file-based method
+clipboard = CustomClipboard()
 
 FAMOUS_PAGES = [
     "bbc.com",
@@ -49,7 +56,7 @@ class Function:
         elif self.kind == 1:
             return True
         else:
-            return False
+            return True
 
 
 class Context:
@@ -93,7 +100,8 @@ class Context:
 
         print("Context: Performing image search...")
         print("Checking if the images are from famous pages...")
-        pyperclip.copy(input.get_image_url())
+        # pyperclip.copy(input.get_image_url())
+        clipboard.copy(input.get_image_url())
         results = self._strategy.search(headless=headless)
         print(len(results))
         if results:

@@ -1,8 +1,10 @@
 __pycache__/
 results/
 input_images/
+weights/
 cheapfakes_detection_SCID2024/
 
 service_account.json
+*.pt
 
 TruFor_weights.zip
