@@ -24,6 +24,14 @@ IMAGE_FOLDER = "/thesis-demo/trufor-clone/test_docker/images"
 ORIGINAL_PATH = "/thesis-demo/"
 CHEAPFAKES_INPUT_FOLDER = "/thesis-demo/input_images/data"
 
+# check if file with name exists
+def download_cheapfakes_checkpoint():
+    if not os.path.isfile("/thesis-demo/hybrid/checkpoint.best_snli_score_0.9090.pt"):
+        os.system("gdown 18IA86NDqR5T8u6zS5RNPSfV7rCmA0pBi")
+        os.system(
+            "mv /thesis-demo/checkpoint.best_snli_score_0.9090.pt /thesis-demo/hybrid/checkpoint.best_snli_score_0.9090.pt"
+        )
+
 
 def information():
     st.set_page_config(
@@ -48,7 +56,9 @@ def get_input(config):
     with l_col:
         image = st.file_uploader("Upload an image", type=["png", "jpg", "jpeg"])
     with c2_col:
-        placeholder = st.image(Image.open("/thesis-demo/placeholder.png"), use_column_width=True)
+        placeholder = st.image(
+            Image.open("/thesis-demo/placeholder.png"), use_column_width=True
+        )
     if image is not None:
         placeholder.empty()
         with c2_col:
@@ -155,6 +165,7 @@ def save_trufor_sep(origin_list, check_list):
         ) as f:
             f.write(f"{b['score']}")
 
+
 def run_trufor(input):
     os.chdir(ORIGINAL_PATH + "trufor-clone/test_docker/src")
     # os.system("bash docker_run.sh")
@@ -177,6 +188,7 @@ def run_trufor(input):
     # save_trufor_all_in_1(origin_list, check_list)
     save_trufor_sep(origin_list, check_list)
 
+
 def run_cheapfakes(input, config):
     if config.get_roc_value():
         print(f"input: {input}")
@@ -196,6 +208,7 @@ def run_cheapfakes(input, config):
             f.write("\n".join(famous))
     else:
         pass
+
 
 def run(input, config):
     # get current directory
@@ -362,6 +375,7 @@ def result_roc(input):
             st.write(f"{i + 1}. {source}")
     os.chdir(ORIGINAL_PATH)
 
+
 def result_cheapfakes(input, hybrid=False):
     # if hybrid:
     #     result_roc(input)
@@ -415,8 +429,7 @@ def result_cheapfakes(input, hybrid=False):
     #     + "cheapfakes_detection_SCID2024/checkpoint.best_snli_score_0.8290.pt"
     # )
     os.environ["checkpoint_path"] = (
-        ORIGINAL_PATH
-        + "hybrid/checkpoint.best_snli_score_0.9090.pt"
+        ORIGINAL_PATH + "hybrid/checkpoint.best_snli_score_0.9090.pt"
     )
     os.environ["result_path"] = "../../results/snli_ve"
     os.environ["selected_cols"] = "0,2,3,4,5"
@@ -462,10 +475,12 @@ def result_cheapfakes(input, hybrid=False):
     # display the result
     st.html("<h2 style='text-align: center;'>Cheapfakes Detection Results</h2>")
     if result == "yes":
-        st.info("Not found any out-of-context (OOC) information in the image and captions.")
+        st.info(
+            "Not found any out-of-context (OOC) information in the image and captions."
+        )
     else:
         st.warning("Found out-of-context (OOC) information in the image and captions!")
-    
+
     os.chdir(ORIGINAL_PATH)
 
 
@@ -478,9 +493,8 @@ def result_both(input, roc_value):
             result_roc(input)
     else:
         result_cheapfakes(input)
-    
+
     result_trufor(input)
-        
 
 
 def show_results_sep(input, kind, roc_value, roc_service):
@@ -509,6 +523,7 @@ def show_results_sep(input, kind, roc_value, roc_service):
 
 
 if __name__ == "__main__":
+    download_cheapfakes_checkpoint()
     # create the directory if it doesn't exist
     if not os.path.exists("results"):
         os.makedirs("results")

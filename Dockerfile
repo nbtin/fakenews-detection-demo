@@ -58,10 +58,10 @@ RUN pip install --upgrade --no-cache-dir gdown
 
 # download cheapfakes weights and move it to the right place
 # RUN gdown 1JqbqNtwz2-gxeJxmeQF-xzNCasO3EfTQ # 8290
-RUN gdown 18IA86NDqR5T8u6zS5RNPSfV7rCmA0pBi
+# RUN gdown 18IA86NDqR5T8u6zS5RNPSfV7rCmA0pBi # 9090
 # RUN mv /thesis-demo/checkpoint.best_snli_score_0.8290.pt /thesis-demo/cheapfakes_detection_SCID2024/checkpoint.best_snli_score_0.8290.pt
 # RUN mv /thesis-demo/checkpoint.best_snli_score_0.8290.pt /thesis-demo/hybrid/checkpoint.best_snli_score_0.8290.pt
-RUN mv /thesis-demo/checkpoint.best_snli_score_0.9090.pt /thesis-demo/hybrid/checkpoint.best_snli_score_0.9090.pt
+# RUN mv /thesis-demo/checkpoint.best_snli_score_0.9090.pt /thesis-demo/hybrid/checkpoint.best_snli_score_0.9090.pt
 
 # download fairseq and move it to the right place, then install it
 # RUN gdown 1rmFUkxdZSFJxCx6coCeN9SRTljfpOY2v
