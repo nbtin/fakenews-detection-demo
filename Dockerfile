@@ -89,8 +89,8 @@ RUN pip install protobuf==3.20.3
 
 # download TruFor weights and move it to the right place
 # RUN wget -q -c https://www.grip.unina.it/download/prog/TruFor/TruFor_weights.zip
-RUN gdown 1IWvNt6_bvHbYfXpN53XdxLmTPhg7hds0
-RUN mv /thesis-demo/TruFor_weights.zip /thesis-demo/trufor-clone/test_docker/TruFor_weights.zip
-RUN unzip -q -n /thesis-demo/trufor-clone/test_docker/TruFor_weights.zip -d /thesis-demo/trufor-clone/test_docker/ && rm /thesis-demo/trufor-clone/test_docker/TruFor_weights.zip
+# RUN gdown 1IWvNt6_bvHbYfXpN53XdxLmTPhg7hds0
+# RUN mv /thesis-demo/TruFor_weights.zip /thesis-demo/trufor-clone/test_docker/TruFor_weights.zip
+# RUN unzip -q -n /thesis-demo/trufor-clone/test_docker/TruFor_weights.zip -d /thesis-demo/trufor-clone/test_docker/ && rm /thesis-demo/trufor-clone/test_docker/TruFor_weights.zip
 
 CMD ["streamlit", "run", "demo_docker.py"]

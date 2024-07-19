@@ -26,11 +26,16 @@ CHEAPFAKES_INPUT_FOLDER = "/thesis-demo/input_images/data"
 
 # check if file with name exists
 def download_cheapfakes_checkpoint():
-    if not os.path.isfile("/thesis-demo/hybrid/checkpoint.best_snli_score_0.9090.pt"):
+    if not os.path.exists("/thesis-demo/hybrid/checkpoint.best_snli_score_0.9090.pt"):
         os.system("gdown 18IA86NDqR5T8u6zS5RNPSfV7rCmA0pBi")
         os.system(
             "mv /thesis-demo/checkpoint.best_snli_score_0.9090.pt /thesis-demo/hybrid/checkpoint.best_snli_score_0.9090.pt"
         )
+    if not os.path.exists("/thesis-demo/trufor-clone/test_docker/weights/"):
+        os.system("gdown 1IWvNt6_bvHbYfXpN53XdxLmTPhg7hds0")
+        os.system("mv /thesis-demo/TruFor_weights.zip /thesis-demo/trufor-clone/test_docker/TruFor_weights.zip")
+        os.system("unzip -q -n /thesis-demo/trufor-clone/test_docker/TruFor_weights.zip -d /thesis-demo/trufor-clone/test_docker/ && rm /thesis-demo/trufor-clone/test_docker/TruFor_weights.zip")
+
 
 
 def information():
@@ -365,11 +370,11 @@ def result_roc(input):
         print(f"We found {famous_size} sources with the provided image: {famous}")
         if famous_size == 1:
             st.html(
-                f"<h4>We found {famous_size} prestigious source with the provided image</h4>"
+                f"<h4>Found {famous_size} prestigious source with provided image</h4>"
             )
         else:
             st.html(
-                f"<h4>We found {famous_size} prestigious sources with the provided image</h4>"
+                f"<h4>Found {famous_size} prestigious sources with provided image</h4>"
             )
         for i, source in enumerate(famous):
             st.write(f"{i + 1}. {source}")

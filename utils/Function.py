@@ -1,5 +1,6 @@
 from __future__ import annotations
 from abc import ABC, abstractmethod
+from turtle import clone
 from typing import List
 
 from numpy import clip
@@ -121,6 +122,8 @@ class Context:
         if input.is_have_article_url():
             clone_results.append(input.get_article_url())
 
+        clone_results = list(set(clone_results))
+        
         famous = []
         for url in tqdm(clone_results):
             for page in FAMOUS_PAGES:
