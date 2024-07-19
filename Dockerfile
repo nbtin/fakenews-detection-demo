@@ -93,6 +93,4 @@ RUN gdown 1IWvNt6_bvHbYfXpN53XdxLmTPhg7hds0
 RUN mv /thesis-demo/TruFor_weights.zip /thesis-demo/trufor-clone/test_docker/TruFor_weights.zip
 RUN unzip -q -n /thesis-demo/trufor-clone/test_docker/TruFor_weights.zip -d /thesis-demo/trufor-clone/test_docker/ && rm /thesis-demo/trufor-clone/test_docker/TruFor_weights.zip
 
-# ENTRYPOINT [ "python", "trufor_test.py" ]
-# ENTRYPOINT [ "python", "demo_docker.py" ]
-# CMD [ "python", "demo_docker.py" ]
+CMD ["streamlit", "run", "demo_docker.py"]
