@@ -21,6 +21,7 @@ This repository contains a demo for analyzing and detecting fake news. The purpo
     ```bash
     bash docker_build.sh
     ```
+    <img src="assets/build_dockerimage.png">
 
 4. Run docker container:
     
@@ -34,7 +35,8 @@ This repository contains a demo for analyzing and detecting fake news. The purpo
     streamlit run demo_docker.py
     ```
 
-5. Wait for the demo to start and open the link in your browser. You are required to wait for the cheapfakes checkpoint to be downloaded (around 2.6GB) before the web ready.
+5. Wait for the demo to start and open the link in your browser. You are required to wait for the cheapfakes checkpoint to be downloaded (around 2.9GB) before the web ready.
+    <img src="assets/download_checkpoints.png">
 
 
 And enjoys the demo!

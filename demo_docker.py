@@ -62,7 +62,7 @@ def get_input(config):
         image = st.file_uploader("Upload an image", type=["png", "jpg", "jpeg"])
     with c2_col:
         placeholder = st.image(
-            Image.open("/thesis-demo/placeholder.png"), use_column_width=True
+            Image.open("/thesis-demo/assets/placeholder.png"), use_column_width=True
         )
     if image is not None:
         placeholder.empty()
