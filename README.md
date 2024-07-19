@@ -26,7 +26,7 @@ This repository contains a demo for analyzing and detecting fake news. The purpo
 4. Run docker container:
     
     ```bash
-    docker run --name=thesis-demo --runtime=nvidia --gpus all -v $(realpath ./):/thesis-demo/ thesis-demo bash
+    docker run -it --name=thesis-demo --runtime=nvidia --gpus all -v $(realpath ./):/thesis-demo/ thesis-demo bash
     
     ```
     This command will let you enter the container with the bash shell. You can run the following command to start the demo:
@@ -35,7 +35,7 @@ This repository contains a demo for analyzing and detecting fake news. The purpo
     streamlit run demo_docker.py
     ```
 
-5. Wait for the demo to start and open the link in your browser. You are required to wait for the cheapfakes checkpoint to be downloaded (around 2.9GB) before the web ready.
+5. Wait for the demo to start and open the link in your browser. You are required to wait for the cheapfakes and TruFor checkpoint to be downloaded (around 2.9GB) before the web ready.
     <img src="assets/download_checkpoints.png">
 
 
