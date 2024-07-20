@@ -14,6 +14,7 @@ from PIL import Image
 from firebase_admin import credentials, initialize_app, storage
 import pyperclip
 import firebase_admin
+import time
 
 # Init firebase with your credentials
 if not firebase_admin._apps:
@@ -55,11 +56,24 @@ def information():
             ":bulb: This fake news detection demo refers to the following works:\n\n - Cheapfakes Detection: \n\n\t - [A Unified Network for Detecting Out-Of-Context Information Using Generative Synthetic Data](https://dl.acm.org/doi/10.1145/3652583.3657599) (ours) - ICMR 2024\n\n\t - [A Hybrid Approach for Cheapfake Detection Using Reputation Checking and End-To-End Network](https://dl.acm.org/doi/10.1145/3660512.3665521) (ours) - SCID 2024\n\n - Deepfakes Detection: [TruFor: Leveraging all-round clues for trustworthy image forgery detection and localization](https://grip-unina.github.io/TruFor/)"
         )
 
+# check uploaded image size (w x h) is satisfied or not
+def is_able_to_run(image):
+    if image is not None:
+        image_check = Image.open(image)
+        width, height = image_check.size
+        return width <= 1080 and height <= 720
+    return False
+
 
 def get_input(config):
     l_col, c1_col, c2_col, r_col = st.columns([0.8, 0.02, 0.16, 0.02])
     with l_col:
         image = st.file_uploader("Upload an image", type=["png", "jpg", "jpeg"])
+        while image is not None and not is_able_to_run(image):
+            st.toast("You've reached the maximum image size.", icon="😢")
+            time.sleep(1)
+            st.toast("Try again with a size of 1080x720 or smaller!", icon="🤗")
+            image = None
     with c2_col:
         placeholder = st.image(
             Image.open("/thesis-demo/assets/placeholder.png"), use_column_width=True
@@ -351,7 +365,7 @@ def result_trufor(input):
     </div>
     """
     progress_text.markdown(progress_style, unsafe_allow_html=True)
-    st.balloons()
+    # st.balloons()
 
     os.chdir(ORIGINAL_PATH)
 
@@ -503,6 +517,7 @@ def result_both(input, roc_value):
 
 
 def show_results_sep(input, kind, roc_value, roc_service):
+    success = False
     if kind == 0:
         try:
             if roc_value:
@@ -513,19 +528,24 @@ def show_results_sep(input, kind, roc_value, roc_service):
                     result_roc(input)
             else:
                 result_cheapfakes(input)
+            success = True
         except Exception as e:
             print("Cheapfakes: something went wrong :))")
     elif kind == 1:
         try:
             result_trufor(input)
+            success = True
         except Exception as e:
             print("TruFor: something went wrong :))")
     else:
         try:
             result_both(input, roc_value)
+            success = True
         except Exception as e:
             print("Both: something went wrong :))")
 
+    if success:
+        st.balloons()
 
 if __name__ == "__main__":
     download_cheapfakes_checkpoint()
