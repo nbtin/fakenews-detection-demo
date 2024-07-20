@@ -24,12 +24,20 @@ This repository contains a demo for analyzing and detecting fake news. The purpo
     <img src="assets/build_dockerimage.png">
 
 4. Run docker container:
+    - Running on your local machine:
     
     ```bash
     docker run -it --name=thesis-demo --runtime=nvidia --gpus all -v $(realpath ./):/thesis-demo/ thesis-demo bash
     
     ```
-    This command will let you enter the container with the bash shell. You can run the following command to start the demo:
+    - Running on a server:
+    
+    ```bash
+    docker run -it --name=thesis-demo --gpus all -v $(realpath ./):/thesis-demo/ thesis-demo bash
+    ```
+    This command will let you enter the container with the bash shell. 
+    
+    You can run the following command to start the demo:
     
     ```bash
     streamlit run demo_docker.py

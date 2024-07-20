@@ -8,3 +8,5 @@ service_account.json
 *.pt
 
 TruFor_weights.zip
+*.err
+*.out
