@@ -10,3 +10,4 @@ service_account.json
 TruFor_weights.zip
 *.err
 *.out
+*.npz

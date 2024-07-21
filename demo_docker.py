@@ -109,7 +109,7 @@ def sidebar_config():
     kind = st.sidebar.radio(
         "**Kind of Manipulation**",
         ("Cheapfakes (Ours)", "Manipulated Images (TruFor)", "Both"),
-        index=1,
+        index=0,
     )
 
     # st.sidebar.write("You chose: ", kind)
