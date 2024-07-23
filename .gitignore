@@ -3,6 +3,7 @@ results/
 input_images/
 weights/
 cheapfakes_detection_SCID2024/
+trufor-clone/test_docker/images/*
 
 service_account.json
 *.pt

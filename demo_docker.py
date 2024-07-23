@@ -51,6 +51,9 @@ def information():
     st.html(
         "<center><h5 style='font-weight: bold;'>Student 1: Nguyen Van Loc (20120131) <br> Student 2: Nguyen Bao Tin (20120596)</h5></center>"
     )
+    st.html(
+        "<center><h5 style='font-weight: bold;'>Supervisors: Assoc Prof. Dr. Tran Minh Triet and MSc. Do Trong Le</h5></center>"
+    )
     with st.expander("Detail of our works"):
         st.info(
             ":bulb: This fake news detection demo refers to the following works:\n\n - Cheapfakes Detection: \n\n\t - [A Unified Network for Detecting Out-Of-Context Information Using Generative Synthetic Data](https://dl.acm.org/doi/10.1145/3652583.3657599) (ours) - ICMR 2024\n\n\t - [A Hybrid Approach for Cheapfake Detection Using Reputation Checking and End-To-End Network](https://dl.acm.org/doi/10.1145/3660512.3665521) (ours) - SCID 2024\n\n - Deepfakes Detection: [TruFor: Leveraging all-round clues for trustworthy image forgery detection and localization](https://grip-unina.github.io/TruFor/)"
