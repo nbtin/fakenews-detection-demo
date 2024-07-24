@@ -13,7 +13,7 @@
 
 nvidia-smi
 
-cd /home/nbtin/fakenews-detection-demo
+cd /home/nbtin/repositories/fakenews-detection-demo
 
 module use /sw/software/rootless-docker
 module load rootless-docker

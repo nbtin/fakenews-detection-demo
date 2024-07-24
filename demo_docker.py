@@ -52,7 +52,7 @@ def information():
         "<center><h5 style='font-weight: bold;'>Student 1: Nguyen Van Loc (20120131) <br> Student 2: Nguyen Bao Tin (20120596)</h5></center>"
     )
     st.html(
-        "<center><h5 style='font-weight: bold;'>Supervisors: Assoc Prof. Dr. Tran Minh Triet and MSc. Do Trong Le</h5></center>"
+        "<center><h5 style='font-weight: bold;'>Thesis Advisors: Assoc Prof. Tran Minh Triet and MSc. Do Trong Le</h5></center>"
     )
     with st.expander("Detail of our works"):
         st.info(
