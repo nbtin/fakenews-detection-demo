@@ -56,7 +56,7 @@ def information():
     )
     with st.expander("Detail of our works"):
         st.info(
-            ":bulb: This fake news detection demo refers to the following works:\n\n - Cheapfakes Detection: \n\n\t - [A Unified Network for Detecting Out-Of-Context Information Using Generative Synthetic Data](https://dl.acm.org/doi/10.1145/3652583.3657599) (ours) - ICMR 2024\n\n\t - [A Hybrid Approach for Cheapfake Detection Using Reputation Checking and End-To-End Network](https://dl.acm.org/doi/10.1145/3660512.3665521) (ours) - SCID 2024\n\n - Deepfakes Detection: [TruFor: Leveraging all-round clues for trustworthy image forgery detection and localization](https://grip-unina.github.io/TruFor/)"
+            ":bulb: This fake news detection demo refers to the following works:\n\n - Cheapfakes Detection: \n\n\t - [A Unified Network for Detecting Out-Of-Context Information Using Generative Synthetic Data](https://dl.acm.org/doi/10.1145/3652583.3657599) (ours) - ICMR 2024\n\n\t - [A Hybrid Approach for Cheapfake Detection Using Reputation Checking and End-To-End Network](https://dl.acm.org/doi/10.1145/3660512.3665521) (ours) - SCID 2024\n\n\t - AI-Enhanced Photo Authenticity: A User-Focused Approach to Detecting and Analyzing Manipulated Images (ours) - MAPR 2024\n\n - Manipulated Images Detection: [TruFor: Leveraging all-round clues for trustworthy image forgery detection and localization](https://grip-unina.github.io/TruFor/) (Guillaro et al.)"
         )
 
 # check uploaded image size (w x h) is satisfied or not
@@ -116,7 +116,7 @@ def sidebar_config():
     )
 
     # st.sidebar.write("You chose: ", kind)
-    st.sidebar.write("#### Optional Features")
+    st.sidebar.write("#### Optional Feature")
     if kind != "Manipulated Images (TruFor)":
         roc_value = st.sidebar.checkbox("Reputation Online Checking (ROC)", value=False)
         roc_info = st.sidebar.info(
@@ -374,7 +374,7 @@ def result_trufor(input):
 
 
 def result_roc(input):
-    st.html("<h2 style='text-align: center;'>ROC Result</h2>")
+    st.html("<h2 style='text-align: center;'>ROC Results</h2>")
     with open(
         f"/thesis-demo/results/{input.get_image_name().split('.')[0]}_roc.txt", "r"
     ) as f:

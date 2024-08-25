@@ -2,6 +2,7 @@ from __future__ import annotations
 from abc import ABC, abstractmethod
 from turtle import clone
 from typing import List
+import random
 
 from numpy import clip
 
@@ -34,6 +35,7 @@ FAMOUS_PAGES = [
     "pressherald.com",
     "independent.co.uk",
     "gazette.com",
+    # https://pressgazette.co.uk/media-audience-and-business-data/media_metrics/most-popular-websites-news-world-monthly-2/
     "bbc.co.uk",
     "msn.com",
     "cnn.com",
@@ -76,7 +78,15 @@ FAMOUS_PAGES = [
     "abcnews.go.com",
     "timesnownews.com",
     "bloomberg.com",
+    # Vietnam
+    "vnuhcm.edu.vn",
+    "tuoitre.vn",
+    "hcmus.edu.vn",
+    "thanhnien.vn", 
+    "sggp.org.vn",
+    "chinhphu.vn",
 ]
+
 
 from tqdm import tqdm
 import json
@@ -172,6 +182,9 @@ class Context:
                 if page in url:
                     famous.append(url)
                     break
+        # if len of famous is more than 20, shuffle the list and get the first 20
+        if len(famous) > 20:
+            famous = random.sample(famous, 20)
         return famous
 
 
