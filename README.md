@@ -1,6 +1,6 @@
-# Fake News Detection Demo
+# Fake News Analysis and Detection Demo
 
-This repository contains a demo for analyzing and detecting fake news. The purpose of this README is to provide instructions on how to run the code.
+This repository contains a demo for analyzing and detecting fake news. This web-app provides users with insights and relevant information to help them analyze and classify fake news.
 
 **Credit:** This project uses [TruFor](https://grip-unina.github.io/TruFor/), as the forensic framework for the given image, created by Guillaro, Fabrizio and Cozzolino, Davide and Sud, Avneesh and Dufour, Nicholas and Verdoliva, Luisa.
 
